@@ -1,0 +1,32 @@
+.section {
+  padding: 64px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 100px 0;
+  }
+  &--dark {
+    background-color: coloring(gray-900);
+  }
+
+  &__heading {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
+    &--only {
+      margin-bottom: 40px;
+    }
+
+    &--center {
+      @media screen and (min-width: $bp-tablet) {
+        text-align: center;
+      }
+    }
+    &--dark {
+      color: coloring(gray-900);
+    }
+    &--white {
+      color: coloring(base-white);
+    }
+  }
+}

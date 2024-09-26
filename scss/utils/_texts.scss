@@ -1,0 +1,44 @@
+.title-h1,
+.title-h2,
+.title-h4,
+.title-h5,
+.title-h6,
+.title-h7 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title-h1 {
+  font-size: 40px;
+  line-height: 1.2;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 56px;
+    line-height: 1.15;
+  }
+}
+.title-h2 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+.title-h4 {
+  font-size: 32px;
+  line-height: 1.25;
+}
+.title-h5 {
+  font-size: 16px;
+  line-height: 1.25;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 24px;
+  }
+}
+.title-h6 {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+}
+.title-h7 {
+  font-size: 16px;
+  line-height: 1.25;
+}

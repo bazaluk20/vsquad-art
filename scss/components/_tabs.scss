@@ -1,0 +1,39 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  border-bottom: 1px solid coloring(gray-600);
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $bp-tablet) {
+    gap: 80px;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 8px 0;
+    text-transform: uppercase;
+    color: coloring(gray-100);
+
+    &.active {
+      color: coloring(primary-red-600);
+      border-bottom: 3px solid coloring(primary-red-600);
+    }
+
+    &.disabled {
+      color: coloring(gray-300);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      & .badge {
+        @media screen and (max-width: $bp-tablet) {
+          display: none;
+        }
+      }
+    }
+  }
+}

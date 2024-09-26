@@ -3,9 +3,1529 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../image/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
     <title>VSQuad ART</title>
   </head>
   <body>
-    <h1>Hello VSQuad ART!</h1>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo-wrapper">
+            <a class="header__logo" href="../index.html">
+              <img src="../image/logo_white.svg" alt="VSQuad ART" />
+            </a>
+          </div>
+          <button id="burgerBtn" class="header__burger" type="button">
+            <span class="header__burger--line"></span>
+          </button>
+          <div id="menuNav" class="header__nav-wrapper">
+            <nav class="header__navmenu">
+              <ul class="header__navmenu-list">
+                <li class="header__navmenu-item dropdown">
+                  <a href="#what-we-do" class="dropdown__link link ddBtn">
+                    What we do
+                  </a>
+                  <ul class="dropdown__list dropdown__list--nav ddList">
+                    <li class="dropdown__item">
+                      <a
+                        href="../what-we-do/2d-character.html"
+                        class="dropdown__item-link link"
+                      >
+                        <span class="dropdown__item-link--title">
+                          2D CHARACTER
+                        </span>
+                        <span class="dropdown__item-link--description">
+                          Craft engaging, visually stunning characters to
+                          captivate your audience.
+                        </span>
+                      </a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a
+                        href="../what-we-do/3d-character.html"
+                        class="dropdown__item-link link"
+                      >
+                        <span class="dropdown__item-link--title">
+                          3D CHARACTER
+                        </span>
+                        <span class="dropdown__item-link--description">
+                          Immerse players in beautifully crafted,
+                          two-dimensional worlds, each with its unique
+                          atmosphere.
+                        </span>
+                      </a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a
+                        href="../what-we-do/2d-environment.html"
+                        class="dropdown__item-link link"
+                      >
+                        <span class="dropdown__item-link--title">
+                          2D ENVIRONMENT
+                        </span>
+                        <span class="dropdown__item-link--description">
+                          Bring depth and realism to your game with intricately
+                          designed three-dimensional characters.
+                        </span>
+                      </a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a
+                        href="../what-we-do/3d-environment.html"
+                        class="dropdown__item-link link"
+                      >
+                        <span class="dropdown__item-link--title">
+                          3D ENVIRONMENT
+                        </span>
+                        <span class="dropdown__item-link--description">
+                          Create expansive, lifelike three-dimensional settings
+                          that offer an unparalleled gaming experience.
+                        </span>
+                      </a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a
+                        href="../what-we-do/3d-animation.html"
+                        class="dropdown__item-link link"
+                      >
+                        <span class="dropdown__item-link--title">
+                          3D ANIMATION
+                        </span>
+                        <span class="dropdown__item-link--description">
+                          Infuse dynamic, fluid movements into your characters
+                          and environments, making your game world truly come to
+                          life.
+                        </span>
+                      </a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a href="#contacts" class="dropdown__item-link link">
+                        <span class="dropdown__item-link--title">
+                          Contact Us
+                        </span>
+                        <span class="dropdown__item-link--description">
+                          Feel free to contact us in any way convenient for you.
+                          Let’s create beautiful project together!
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__navmenu-item">
+                  <a href="#about" class="link">About us</a>
+                </li>
+                <li class="header__navmenu-item">
+                  <a href="#why-su" class="link">Why us</a>
+                </li>
+                <li class="header__navmenu-item dropdown">
+                  <a href="#prijects" class="dropdown__link link ddBtn">
+                    Projects
+                  </a>
+                  <ul class="dropdown__list dropdown__list--nav ddList">
+                    <li class="dropdown__item">
+                      <a
+                        href="../projects/wayfinder.html"
+                        class="dropdown__item-link link"
+                      >
+                        <span class="dropdown__item-link--title">
+                          WAYFINDER
+                        </span>
+                        <span class="dropdown__item-link--description">
+                          We working on this project as 3D artists creating
+                          characters.
+                        </span>
+                      </a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a
+                        href="../projects/darksiders-genesis.html"
+                        class="dropdown__item-link link"
+                      >
+                        <span class="dropdown__item-link--title">
+                          Darksiders Genesis
+                        </span>
+                        <span class="dropdown__item-link--description">
+                          We worked on this project as 3D designers creating
+                          characters.
+                        </span>
+                      </a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a
+                        href="../projects/battle-chasers.html"
+                        class="dropdown__item-link link"
+                      >
+                        <span class="dropdown__item-link--title">
+                          Battle Chasers
+                        </span>
+                        <span class="dropdown__item-link--description">
+                          We worked on this project as 3D designers creating
+                          characters, monsters and environment.
+                        </span>
+                      </a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a
+                        href="../projects/ruined-king.html"
+                        class="dropdown__item-link link"
+                      >
+                        <span class="dropdown__item-link--title">
+                          Ruined King
+                        </span>
+                        <span class="dropdown__item-link--description">
+                          We worked on this project as 3D designers creating
+                          characters, monsters and weapon.
+                        </span>
+                      </a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a
+                        href="../projects/smite.html"
+                        class="dropdown__item-link link"
+                      >
+                        <span class="dropdown__item-link--title"> SMITE </span>
+                        <span class="dropdown__item-link--description">
+                          We worked on this project as 3D designers creating
+                          characters.
+                        </span>
+                      </a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a href="#" class="dropdown__item-link link">
+                        <span class="dropdown__item-link--title">
+                          OWN PROJECTS
+                        </span>
+                        <span class="dropdown__item-link--description">
+                          We approached the creating of figure with great love
+                          and respect for the original source.
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__navmenu-item">
+                  <a href="#contacts" class="link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__social-icon">
+              <a href="mailto:user@email.com" class="social-circle">
+                <svg class="social-circle__icons" width="24px" height="24px">
+                  <use href="../image/sprite.svg#icon-email"></use>
+                </svg>
+              </a>
+              <a href="#" class="social-circle" target="_blank">
+                <svg class="social-circle__icons" width="24px" height="24px">
+                  <use href="../image/sprite.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+              <a href="#" class="social-circle" target="_blank">
+                <svg class="social-circle__icons" width="24px" height="24px">
+                  <use href="../image/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="first-screen">
+        <div class="first-screen__content">
+          <img
+            class="first-screen__logo-image"
+            src="../image/logo_white_small.svg"
+            alt="VSQuad Studio"
+          />
+          <h1 class="first-screen__heading title-h1">VSQuad Studio</h1>
+          <p class="first-screen__description">partner in art</p>
+          <div class="first-screen__wrapper-btn">
+            <button class="first-screen__btn button button--red modal-btn-open">
+              get a quote
+            </button>
+            <a class="first-screen__btn button button--dark" href="#contacts">
+              Contact us
+            </a>
+          </div>
+          <div class="first-screen__wripper-icons">
+            <a href="#" class="social">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="what-we-do section section--dark">
+        <div class="container">
+          <h2
+            class="section__heading title-h2 section__heading--white section__heading--center section__heading--only"
+          >
+            What we do
+          </h2>
+          <div class="what-we-do__content">
+            <div class="tabs">
+              <button
+                class="tablinks-wwd tabs__button title-h6"
+                onclick="openTabWhatWeDo(event, 'aaa-games-wwd')"
+                id="defaultOpenWhatWeDo"
+              >
+                AAA Games
+              </button>
+              <button
+                class="tablinks-wwd tabs__button disabled title-h6"
+                disabled
+                onclick="openTabWhatWeDo(event, 'mobile-games-wwd')"
+              >
+                mobile Games
+                <span class="badge">Coming soon</span>
+              </button>
+            </div>
+
+            <div id="aaa-games-wwd" class="tabcontent-wwd wwd">
+              <button class="wwd-card-btn carousel-button prev" type="button">
+                <svg class="carousel-arrow" width="30" height="30">
+                  <use href="../image/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <div class="wwd__slider swiper-aaa-games-wwd">
+                <ul class="wwd__slider-list swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="slider-item wwd-card">
+                      <div class="wwd-card__wrapper-image">
+                        <img
+                          src="../image/slider/slide-2d-char.jpg"
+                          alt="2D CHARACTER"
+                        />
+                        <div class="wwd-card__hover-image">
+                          <p>
+                            Craft engaging, visually stunning characters to
+                            captivate your audience.
+                          </p>
+                          <a class="wwd-card__btn button button--red" href="#">
+                            View more
+                            <svg
+                              class="wwd-card__icons"
+                              width="24px"
+                              height="24px"
+                            >
+                              <use
+                                href="../image/sprite.svg#icon-arrow-link"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="wwd-card__title title-h5">2D CHARACTER</p>
+                      <a
+                        class="wwd-card__btn wwd-card__btn--mobile button button--red"
+                        href="#"
+                      >
+                        View more
+                        <svg class="wwd-card__icons" width="24px" height="24px">
+                          <use href="../image/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slider-item wwd-card">
+                      <div class="wwd-card__wrapper-image">
+                        <img
+                          src="../image/slider/slider-2d-envi.jpg"
+                          alt="2D CHARACTER"
+                        />
+                        <div class="wwd-card__hover-image">
+                          <p>
+                            Immerse players in beautifully crafted,
+                            two-dimensional worlds, each with its unique
+                            atmosphere.
+                          </p>
+                          <a class="wwd-card__btn button button--red" href="#">
+                            View more
+                            <svg
+                              class="wwd-card__icons"
+                              width="24px"
+                              height="24px"
+                            >
+                              <use
+                                href="../image/sprite.svg#icon-arrow-link"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="wwd-card__title title-h5">2D ENVIRONMENT</p>
+                      <a
+                        class="wwd-card__btn wwd-card__btn--mobile button button--red"
+                        href="#"
+                      >
+                        View more
+                        <svg class="wwd-card__icons" width="24px" height="24px">
+                          <use href="../image/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slider-item wwd-card">
+                      <div class="wwd-card__wrapper-image">
+                        <img
+                          src="../image/slider/slider-3d-char.jpg"
+                          alt="3D CHARACTER"
+                        />
+                        <div class="wwd-card__hover-image">
+                          <p>
+                            Bring depth and realism to your game with
+                            intricately designed three-dimensional characters.
+                          </p>
+                          <a class="wwd-card__btn button button--red" href="#">
+                            View more
+                            <svg
+                              class="wwd-card__icons"
+                              width="24px"
+                              height="24px"
+                            >
+                              <use
+                                href="../image/sprite.svg#icon-arrow-link"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="wwd-card__title title-h5">3D CHARACTER</p>
+                      <a
+                        class="wwd-card__btn wwd-card__btn--mobile button button--red"
+                        href="#"
+                      >
+                        View more
+                        <svg class="wwd-card__icons" width="24px" height="24px">
+                          <use href="../image/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slider-item wwd-card">
+                      <div class="wwd-card__wrapper-image">
+                        <img
+                          src="../image/slider/slider-3d-envi.jpg"
+                          alt="3D ENVIRONMENT"
+                        />
+                        <div class="wwd-card__hover-image">
+                          <p>
+                            Create expansive, lifelike three-dimensional
+                            settings that offer an unparalleled gaming
+                            experience.
+                          </p>
+                          <a class="wwd-card__btn button button--red" href="#">
+                            View more
+                            <svg
+                              class="wwd-card__icons"
+                              width="24px"
+                              height="24px"
+                            >
+                              <use
+                                href="../image/sprite.svg#icon-arrow-link"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="wwd-card__title title-h5">3D ENVIRONMENT</p>
+                      <a
+                        class="wwd-card__btn wwd-card__btn--mobile button button--red"
+                        href="#"
+                      >
+                        View more
+                        <svg class="wwd-card__icons" width="24px" height="24px">
+                          <use href="../image/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="slider-item wwd-card">
+                      <div class="wwd-card__wrapper-image">
+                        <img
+                          src="../image/slider/slider-3d-animation.jpg"
+                          alt="3D ANIMATION"
+                        />
+                        <div class="wwd-card__hover-image">
+                          <p>
+                            Infuse dynamic, fluid movements into your characters
+                            and environments, making your game world truly come
+                            to life.
+                          </p>
+                          <a class="wwd-card__btn button button--red" href="#">
+                            View more
+                            <svg
+                              class="wwd-card__icons"
+                              width="24px"
+                              height="24px"
+                            >
+                              <use
+                                href="../image/sprite.svg#icon-arrow-link"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="wwd-card__title title-h5">3D ANIMATION</p>
+                      <a
+                        class="wwd-card__btn wwd-card__btn--mobile button button--red"
+                        href="#"
+                      >
+                        View more
+                        <svg class="wwd-card__icons" width="24px" height="24px">
+                          <use href="../image/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+                <div class="pagination"></div>
+              </div>
+              <button class="wwd-card-btn carousel-button next" type="button">
+                <svg class="carousel-arrow" width="30" height="30">
+                  <use href="../image/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div id="mobile-games-wwd" class="tabcontent-wwd"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section">
+        <div class="container">
+          <div class="about__wrapper">
+            <div class="about__content">
+              <h2 class="section__heading title-h2 section__heading--dark">
+                About us
+              </h2>
+              <div class="about__description">
+                <p>VSQUAD is a highly motivated game art outsourcing studio.</p>
+                <p>
+                  We started in 2018 and now our team comprises more than 30
+                  specialists.
+                </p>
+                <p>
+                  The majority of them have experience in developing AAA games.
+                </p>
+                <p>
+                  Our superpower is creating art that attracts gamers’ attention
+                  and drags them into your game.
+                </p>
+              </div>
+              <h3 class="about__heading-second title-h4">We work in:</h3>
+              <ul class="about__work-in-list title-h5">
+                <li class="about__work-in-item">Maya</li>
+                <li class="about__work-in-item">3d max</li>
+                <li class="about__work-in-item">Modo</li>
+                <li class="about__work-in-item">Blender</li>
+                <li class="about__work-in-item">Zbrush</li>
+                <li class="about__work-in-item">Photoshop</li>
+                <li class="about__work-in-item">3D coat</li>
+                <li class="about__work-in-item">Unreal</li>
+                <li class="about__work-in-item">Unity</li>
+                <li class="about__work-in-item">Substance painter</li>
+                <li class="about__work-in-item">Marmoset</li>
+              </ul>
+            </div>
+            <div class="about__image">
+              <img src="../image/about.jpg" alt="About us" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us section">
+        <div class="container">
+          <div class="why-us__content">
+            <h2
+              class="section__heading title-h2 section__heading--white section__heading--center"
+            >
+              why us
+            </h2>
+            <p class="why-us__description">
+              We strongly believe that collaboration with VSQUAD provides you
+              with a number of advantages:
+            </p>
+            <div class="why-us__wrapper">
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-cards"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-text">
+                  Deep understanding of your game’s aesthetic and style
+                </p>
+              </div>
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-image"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-text">
+                  Senior level of art competency
+                </p>
+              </div>
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-stopwatch"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-text">Respecting deadlines</p>
+              </div>
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-chat"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-text">
+                  Constantly staying in touch
+                </p>
+              </div>
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-ideas"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-text">
+                  Providing you with extra ideas
+                </p>
+              </div>
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-game"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-text">
+                  Making everything possible to bring your game to life in a
+                  most beautiful shape
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section section--dark">
+        <div class="container">
+          <h2
+            class="section__heading title-h2 section__heading--white section__heading--center section__heading--only"
+          >
+            Projects
+          </h2>
+          <div class="prjects__content">
+            <div class="tabs">
+              <button
+                class="tablinks-project tabs__button title-h6"
+                onclick="openTabProject(event, 'aaa-games-project')"
+                id="defaultOpenProject"
+              >
+                AAA Games
+              </button>
+              <button
+                class="tablinks-project tabs__button disabled title-h6"
+                disabled
+                onclick="openTabProject(event, 'mobile-games-project')"
+              >
+                mobile Games
+                <span class="badge">Coming soon</span>
+              </button>
+            </div>
+
+            <div id="aaa-games-project" class="tabcontent-project project">
+              <div class="project--for-desctop">
+                <div class="parent">
+                  <div class="div1">
+                    <div class="project__wrapper">
+                      <img
+                        class="project__bg-image"
+                        src="../image/projects/ruined-king.jpg"
+                        alt=""
+                      />
+                      <img
+                        class="project__logo-image"
+                        src="../image/projects/ruined-king-logo.png"
+                        alt=""
+                      />
+                      <div class="project__on-hover">
+                        <div class="project__on-hover--wrapper">
+                          <p>
+                            We worked on this project as 3D designers creating
+                            characters, monsters and weapon
+                          </p>
+                          <a class="project__btn button button--red" href="#">
+                            Discover
+                            <svg
+                              class="project__icons"
+                              width="24px"
+                              height="24px"
+                            >
+                              <use
+                                href="../image/sprite.svg#icon-arrow-link"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      class="project__btn project__btn--mobile button button--red"
+                      href="#"
+                    >
+                      Discover
+                      <svg class="project__icons" width="24px" height="24px">
+                        <use href="../image/sprite.svg#icon-arrow-link"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="div2">
+                    <div class="project__wrapper">
+                      <img
+                        class="project__bg-image"
+                        src="../image/projects/wayfinder.jpg"
+                        alt=""
+                      />
+                      <img
+                        class="project__logo-image"
+                        src="../image/projects/wayfinder-logo.png"
+                        alt=""
+                      />
+                      <div class="project__on-hover">
+                        <div class="project__on-hover--wrapper">
+                          <p>
+                            We working on this project as 3D artists creating
+                            characters.
+                          </p>
+                          <a class="project__btn button button--red" href="#">
+                            Discover
+                            <svg
+                              class="project__icons"
+                              width="24px"
+                              height="24px"
+                            >
+                              <use
+                                href="../image/sprite.svg#icon-arrow-link"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      class="project__btn project__btn--mobile button button--red"
+                      href="#"
+                    >
+                      Discover
+                      <svg class="project__icons" width="24px" height="24px">
+                        <use href="../image/sprite.svg#icon-arrow-link"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="div3">
+                    <div class="project__wrapper">
+                      <img
+                        class="project__bg-image"
+                        src="../image/projects/smite.jpg"
+                        alt=""
+                      />
+                      <img
+                        class="project__logo-image"
+                        src="../image/projects/smite-logo.png"
+                        alt=""
+                      />
+                      <div class="project__on-hover">
+                        <div class="project__on-hover--wrapper">
+                          <p>
+                            We worked on this project as 3D designers creating
+                            characters.
+                          </p>
+                          <a class="project__btn button button--red" href="#">
+                            Discover
+                            <svg
+                              class="project__icons"
+                              width="24px"
+                              height="24px"
+                            >
+                              <use
+                                href="../image/sprite.svg#icon-arrow-link"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      class="project__btn project__btn--mobile button button--red"
+                      href="#"
+                    >
+                      Discover
+                      <svg class="project__icons" width="24px" height="24px">
+                        <use href="../image/sprite.svg#icon-arrow-link"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="div4">
+                    <div class="project__wrapper">
+                      <img
+                        class="project__bg-image"
+                        src="../image/projects/darksiders.jpg"
+                        alt=""
+                      />
+                      <img
+                        class="project__logo-image"
+                        src="../image/projects/darksiders-logo.png"
+                        alt=""
+                      />
+                      <div class="project__on-hover">
+                        <div class="project__on-hover--wrapper">
+                          <p>
+                            We worked on this project as 3D designers creating
+                            characters
+                          </p>
+                          <a class="project__btn button button--red" href="#">
+                            Discover
+                            <svg
+                              class="project__icons"
+                              width="24px"
+                              height="24px"
+                            >
+                              <use
+                                href="../image/sprite.svg#icon-arrow-link"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      class="project__btn project__btn--mobile button button--red"
+                      href="#"
+                    >
+                      Discover
+                      <svg class="project__icons" width="24px" height="24px">
+                        <use href="../image/sprite.svg#icon-arrow-link"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="div5">
+                    <div class="project__wrapper">
+                      <img
+                        class="project__bg-image"
+                        src="../image/projects/battle-chasers.png"
+                        alt=""
+                      />
+                      <img
+                        class="project__logo-image"
+                        src="../image/projects/battle-chasers-logo.png"
+                        alt=""
+                      />
+                      <div class="project__on-hover">
+                        <div class="project__on-hover--wrapper">
+                          <p>
+                            We worked on this project as 3D designers creating
+                            characters, monsters and environment.
+                          </p>
+                          <a class="project__btn button button--red" href="#">
+                            Discover
+                            <svg
+                              class="project__icons"
+                              width="24px"
+                              height="24px"
+                            >
+                              <use
+                                href="../image/sprite.svg#icon-arrow-link"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      class="project__btn project__btn--mobile button button--red"
+                      href="#"
+                    >
+                      Discover
+                      <svg class="project__icons" width="24px" height="24px">
+                        <use href="../image/sprite.svg#icon-arrow-link"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="div6">
+                    <div class="project__wrapper">
+                      <img
+                        class="project__bg-image"
+                        src="../image/projects/vsquad.jpg"
+                        alt=""
+                      />
+                      <div class="project__on-hover">
+                        <div class="project__on-hover--wrapper">
+                          <h3 class="project__heading title-h5">
+                            OWN PROJECTS
+                          </h3>
+                          <p>
+                            This 3D figure of Archangel Inarius is our tribute
+                            to Diablo 4. We approached the creating of figure
+                            with great love and respect for the original source.
+                          </p>
+                          <a class="project__btn button button--red" href="#">
+                            Discover
+                            <svg
+                              class="project__icons"
+                              width="24px"
+                              height="24px"
+                            >
+                              <use
+                                href="../image/sprite.svg#icon-arrow-link"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      class="project__btn project__btn--mobile button button--red"
+                      href="#"
+                    >
+                      Discover
+                      <svg class="project__icons" width="24px" height="24px">
+                        <use href="../image/sprite.svg#icon-arrow-link"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project__slider-wrapper project--for-mobile">
+                <button class="project-btn carousel-button prev" type="button">
+                  <svg class="carousel-arrow" width="30" height="30">
+                    <use href="../image/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <div class="project__slider swiper-aaa-games-project">
+                  <ul class="project__slider-list swiper-wrapper">
+                    <li class="swiper-slide">
+                      <div class="project__wrapper">
+                        <img
+                          class="project__bg-image"
+                          src="../image/projects/ruined-king.jpg"
+                          alt=""
+                        />
+                        <img
+                          class="project__logo-image"
+                          src="../image/projects/ruined-king-logo.png"
+                          alt=""
+                        />
+                        <div class="project__on-hover">
+                          <div class="project__on-hover--wrapper">
+                            <p>
+                              We worked on this project as 3D designers creating
+                              characters, monsters and weapon
+                            </p>
+                            <a class="project__btn button button--red" href="#">
+                              Discover
+                              <svg
+                                class="project__icons"
+                                width="24px"
+                                height="24px"
+                              >
+                                <use
+                                  href="../image/sprite.svg#icon-arrow-link"
+                                ></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        class="project__btn project__btn--mobile button button--red"
+                        href="#"
+                      >
+                        Discover
+                        <svg class="project__icons" width="24px" height="24px">
+                          <use href="../image/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="project__wrapper">
+                        <img
+                          class="project__bg-image"
+                          src="../image/projects/wayfinder.jpg"
+                          alt=""
+                        />
+                        <img
+                          class="project__logo-image"
+                          src="../image/projects/wayfinder-logo.png"
+                          alt=""
+                        />
+                        <div class="project__on-hover">
+                          <div class="project__on-hover--wrapper">
+                            <p>
+                              We working on this project as 3D artists creating
+                              characters.
+                            </p>
+                            <a class="project__btn button button--red" href="#">
+                              Discover
+                              <svg
+                                class="project__icons"
+                                width="24px"
+                                height="24px"
+                              >
+                                <use
+                                  href="../image/sprite.svg#icon-arrow-link"
+                                ></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        class="project__btn project__btn--mobile button button--red"
+                        href="#"
+                      >
+                        Discover
+                        <svg class="project__icons" width="24px" height="24px">
+                          <use href="../image/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="project__wrapper">
+                        <img
+                          class="project__bg-image"
+                          src="../image/projects/smite.jpg"
+                          alt=""
+                        />
+                        <img
+                          class="project__logo-image"
+                          src="../image/projects/smite-logo.png"
+                          alt=""
+                        />
+                        <div class="project__on-hover">
+                          <div class="project__on-hover--wrapper">
+                            <p>
+                              We worked on this project as 3D designers creating
+                              characters.
+                            </p>
+                            <a class="project__btn button button--red" href="#">
+                              Discover
+                              <svg
+                                class="project__icons"
+                                width="24px"
+                                height="24px"
+                              >
+                                <use
+                                  href="../image/sprite.svg#icon-arrow-link"
+                                ></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        class="project__btn project__btn--mobile button button--red"
+                        href="#"
+                      >
+                        Discover
+                        <svg class="project__icons" width="24px" height="24px">
+                          <use href="../image/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="project__wrapper">
+                        <img
+                          class="project__bg-image"
+                          src="../image/projects/darksiders.jpg"
+                          alt=""
+                        />
+                        <img
+                          class="project__logo-image"
+                          src="../image/projects/darksiders-logo.png"
+                          alt=""
+                        />
+                        <div class="project__on-hover">
+                          <div class="project__on-hover--wrapper">
+                            <p>
+                              We worked on this project as 3D designers creating
+                              characters
+                            </p>
+                            <a class="project__btn button button--red" href="#">
+                              Discover
+                              <svg
+                                class="project__icons"
+                                width="24px"
+                                height="24px"
+                              >
+                                <use
+                                  href="../image/sprite.svg#icon-arrow-link"
+                                ></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        class="project__btn project__btn--mobile button button--red"
+                        href="#"
+                      >
+                        Discover
+                        <svg class="project__icons" width="24px" height="24px">
+                          <use href="../image/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="project__wrapper">
+                        <img
+                          class="project__bg-image"
+                          src="../image/projects/battle-chasers.png"
+                          alt=""
+                        />
+                        <img
+                          class="project__logo-image"
+                          src="../image/projects/battle-chasers-logo.png"
+                          alt=""
+                        />
+                        <div class="project__on-hover">
+                          <div class="project__on-hover--wrapper">
+                            <p>
+                              We worked on this project as 3D designers creating
+                              characters, monsters and environment.
+                            </p>
+                            <a class="project__btn button button--red" href="#">
+                              Discover
+                              <svg
+                                class="project__icons"
+                                width="24px"
+                                height="24px"
+                              >
+                                <use
+                                  href="../image/sprite.svg#icon-arrow-link"
+                                ></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        class="project__btn project__btn--mobile button button--red"
+                        href="#"
+                      >
+                        Discover
+                        <svg class="project__icons" width="24px" height="24px">
+                          <use href="../image/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="project__wrapper">
+                        <img
+                          class="project__bg-image"
+                          src="../image/projects/vsquad.jpg"
+                          alt=""
+                        />
+                        <div class="project__on-hover">
+                          <div class="project__on-hover--wrapper">
+                            <h3 class="project__heading title-h5">
+                              OWN PROJECTS
+                            </h3>
+                            <p>
+                              This 3D figure of Archangel Inarius is our tribute
+                              to Diablo 4. We approached the creating of figure
+                              with great love and respect for the original
+                              source.
+                            </p>
+                            <a class="project__btn button button--red" href="#">
+                              Discover
+                              <svg
+                                class="project__icons"
+                                width="24px"
+                                height="24px"
+                              >
+                                <use
+                                  href="../image/sprite.svg#icon-arrow-link"
+                                ></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        class="project__btn project__btn--mobile button button--red"
+                        href="#"
+                      >
+                        Discover
+                        <svg class="project__icons" width="24px" height="24px">
+                          <use href="../image/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="pagination"></div>
+                </div>
+                <button class="project-btn carousel-button next" type="button">
+                  <svg class="carousel-arrow" width="30" height="30">
+                    <use href="../image/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div id="mobile-games-project" class="tabcontent-project"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts section">
+        <div class="container">
+          <div class="contacts__wrapper">
+            <div class="contacts__content">
+              <h2 class="section__heading section__heading--dark title-h2">
+                Contacts
+              </h2>
+              <p>
+                Feel free to contact us in any way convenient for you. Let’s
+                create beautiful project together!
+              </p>
+              <div class="contacts__links-wrapper">
+                <a
+                  class="contacts__links social-black"
+                  href="mailto:head@vsquad.art"
+                >
+                  <svg class="social-black__icons" width="24px" height="24px">
+                    <use href="../image/sprite.svg#icon-email"></use>
+                  </svg>
+                  head@vsquad.art
+                </a>
+                <a
+                  class="contacts__links social-black"
+                  href="#"
+                  target="_blank"
+                >
+                  <svg class="social-black__icons" width="24px" height="24px">
+                    <use href="../image/sprite.svg#icon-artstation"></use>
+                  </svg>
+                  /vsquadstudio
+                </a>
+              </div>
+              <div class="contacts__photos">
+                <div class="contacts__photo">
+                  <img src="../image/alona.jpg" alt="Alona Liubchuk" />
+                  <div class="contacts__name-wrapper">
+                    <p class="contacts__name title-h5">Alona Liubchuk</p>
+                    <p class="contacts__speciality">Director</p>
+                    <a class="contacts__linkedin social-black" href="#">
+                      <svg
+                        class="social-black__icons"
+                        width="24px"
+                        height="24px"
+                      >
+                        <use href="../image/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="contacts__photo">
+                  <div class="contacts__name-wrapper">
+                    <p class="contacts__name title-h5">Volodymyr Liubchuk</p>
+                    <p class="contacts__speciality">Founder, CEO, HR</p>
+                    <a class="contacts__linkedin social-black" href="#">
+                      <svg
+                        class="social-black__icons"
+                        width="24px"
+                        height="24px"
+                      >
+                        <use href="../image/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <img src="../image/volodymyr.jpg" alt="Volodymyr Liubchuk" />
+                </div>
+              </div>
+            </div>
+            <div class="contacts__form">
+              <form class="form" action="" method="post">
+                <div class="contacts__form-wrapper">
+                  <label class="form__label">
+                    Name
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="name"
+                      id="user-name"
+                      placeholder="Enter your name"
+                    />
+                  </label>
+                  <label class="form__label">
+                    Company
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="company"
+                      id="user-company"
+                      placeholder="Enter your company name"
+                    />
+                  </label>
+                  <label class="form__label">
+                    Business email
+                    <input
+                      class="form__input"
+                      type="email"
+                      name="email"
+                      id="user-email"
+                      placeholder="Example: email@gmail.com"
+                    />
+                  </label>
+                  <label class="form__label">
+                    Message
+                    <textarea
+                      class="form__textarea"
+                      name="message"
+                      id="user-message"
+                      placeholder="Write a message"
+                    ></textarea>
+                  </label>
+                </div>
+
+                <div class="contacts__form-policy form__policy">
+                  <input
+                    class="form__checkbox-input visually-hidden"
+                    type="checkbox"
+                    id="checkbox-terms"
+                    name="checkbox-terms"
+                  />
+                  <label class="form__checkbox-label" for="checkbox-terms">
+                    <span>
+                      By ticking this box, I am giving a consent to process my
+                      personal data provided in the form above in accordance
+                      with VSQUAD’s
+                      <a target="_blank" href="#">Privacy Policy</a>
+                      and
+                      <a href="#" target="_blank">Cookie Policy</a>
+                    </span>
+                  </label>
+                </div>
+
+                <button
+                  class="contacts__form-btn button button--red"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <a class="footer__logo-image" href="#">
+              <img src="../image/logo_white.svg" alt="logo" />
+            </a>
+            <p class="footer__copy">&copy; VSQUAD. All rights reserved</p>
+          </div>
+          <div class="footer__menu">
+            <ul>
+              <li><a class="footer__menu-link link" href="#">About us</a></li>
+              <li><a class="footer__menu-link link" href="#">WHY US</a></li>
+              <li><a class="footer__menu-link link" href="#">Contacts</a></li>
+              <li>
+                <a class="footer__menu-link link" href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="footer__menu-link link" href="#">Cookies Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__submenu">
+            <div class="footer__list">
+              <p class="footer__sub-heading title-h7">What we do</p>
+              <ul>
+                <li>
+                  <a class="footer__submenu-link" href="#">2D CHARACTER</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">2D ENVIRONMENT</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">3D CHARACTER</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">3D ANIMATION</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list">
+              <p class="footer__sub-heading title-h7">Projects</p>
+              <ul>
+                <li><a class="footer__submenu-link" href="#">WAYFINDER</a></li>
+                <li>
+                  <a class="footer__submenu-link" href="#">
+                    DARKSIDERS GENESIS
+                  </a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">BATTLE CHASERS</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">RUINED KING</a>
+                </li>
+                <li><a class="footer__submenu-link" href="#">SMITE</a></li>
+                <li>
+                  <a class="footer__submenu-link" href="#">OWN PROJECTS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__social">
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+            <a href="mailto:head@vsquad.art" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-email"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal container">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          <svg class="modal__close-icon" width="16px" height="16px">
+            <use href="../image/sprite.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <h2 class="modal__heading title-h2">CONTACT uS</h2>
+        <p class="modal__description">
+          Feel free to contact us. Let’s create beautiful project together!
+        </p>
+        <div class="modal__form">
+          <form class="form" action="" method="post">
+            <div class="modal__form-wrapper">
+              <label class="form__label modal__input">
+                Name
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </label>
+              <label class="form__label modal__input">
+                Business email
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Example: email@gmail.com"
+                />
+              </label>
+              <label class="form__label modal__textarea">
+                Message
+                <textarea
+                  class="form__textarea"
+                  name="message"
+                  id="message"
+                  placeholder="Write a message"
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="modal__form-policy">
+              <div class="form__policy">
+                <input
+                  class="form__checkbox-input visually-hidden"
+                  type="checkbox"
+                  id="check-terms"
+                  name="checkbox-terms"
+                />
+                <label class="form__checkbox-label" for="check-terms">
+                  <span>
+                    By ticking this box, I am giving a consent to process my
+                    personal data provided in the form above in accordance with
+                    VSQUAD’s
+                    <a target="_blank" href="#">Privacy Policy</a>
+                    and
+                    <a href="#" target="_blank">Cookie Policy</a>
+                  </span>
+                </label>
+              </div>
+
+              <button class="modal__form-btn button button--red" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/slider-what-we-do.js"></script>
+    <script src="../js/slider-projects.js"></script>
+    <script src="../js/tabs.js"></script>
   </body>
 </html>

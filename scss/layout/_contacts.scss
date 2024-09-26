@@ -1,0 +1,141 @@
+.contacts {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 24px;
+      flex-direction: row;
+    }
+  }
+  &__content {
+    flex-basis: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__links-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  &__links {
+    color: coloring(gray-900);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  &__links-icon {
+    fill: coloring(gray-900);
+  }
+
+  &__photos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 16px;
+    border-radius: 25px 0 25px 0;
+    overflow: hidden;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 24px;
+      max-width: 358px;
+    }
+  }
+  &__photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  &__name-wrapper {
+    position: relative;
+  }
+  &__name {
+    color: coloring(gray-900);
+    margin-bottom: 8px;
+    max-width: 80%;
+    line-height: 1;
+  }
+  &__speciality {
+    margin-bottom: 0;
+  }
+  &__linkedin {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__form {
+    position: relative;
+    flex-basis: 548px;
+    background-color: coloring(gray-50);
+    border-top: 6px solid coloring(primary-red-700);
+    padding: 32px 16px;
+    margin-left: -16px;
+    margin-right: -16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 40px 46px;
+      margin: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 6px;
+      background: linear-gradient(
+        170deg,
+        transparent 6px,
+        coloring(gray-900) 0
+      );
+      top: -6px;
+      right: 0;
+    }
+
+    &::after {
+      @media screen and (min-width: $bp-tablet) {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 6px;
+        background: linear-gradient(
+          190deg,
+          transparent 6px,
+          coloring(gray-900) 0
+        );
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
+  &__form-policy {
+    margin-bottom: 24px;
+  }
+  &__form-btn {
+    width: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 210px;
+    }
+  }
+}

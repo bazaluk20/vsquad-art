@@ -1,0 +1,41 @@
+.carousel-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: calc((100% - 30px) / 2);
+  z-index: 2;
+}
+
+.carousel-button.prev {
+  left: 0;
+}
+.carousel-button.next {
+  transform: rotate(180deg);
+  right: 0;
+}
+.carousel-button .carousel-arrow {
+  fill: coloring(base-white);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+
+  &__btn {
+    width: 16px;
+    height: 4px;
+    padding: 0;
+    background-color: coloring(gray-300);
+    border-radius: 6px;
+
+    &--active {
+      background-color: coloring(primary-red-600);
+    }
+  }
+
+  @media screen and (min-width: $bp-desctop) {
+    display: none;
+  }
+}

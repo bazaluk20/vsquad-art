@@ -1,0 +1,59 @@
+$colors: (
+  'base-white': #fff,
+  'base-black': #000,
+
+  'gray-900': #18171c,
+  'gray-800': #272528,
+  'gray-700': #3e3c40,
+  'gray-600': #5b5b5b,
+  'gray-500': #737373,
+  'gray-400': #b4b4b4,
+  'gray-300': #cccccc,
+  'gray-200': #e4e4e4,
+  'gray-100': #f3f3f3,
+  'gray-50': #fbfafa,
+  'gray-25': #fcfcfc,
+
+  'primary-red-900': #41160f,
+  'primary-red-800': #711b15,
+  'primary-red-700': #ab0300,
+  'primary-red-600': #dd2f2c,
+  'primary-red-500': #f05854,
+  'primary-red-400': #ff8481,
+  'primary-red-300': #ff8481,
+  'primary-red-200': #fecdca,
+  'primary-red-100': #fce9e9,
+  'primary-red-50': #fef3f2,
+  'primary-red-25': #fffbfa,
+
+  'text-body': #5b5b5b,
+  'text-subtitle': #858585,
+  'text-underline': #d1d1d2,
+);
+
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+@function coloring($name, $opacity: false) {
+  @if $opacity {
+    @return rgba(var(--#{unquote($name)}--rgb), $opacity);
+  } @else {
+    @return var(--#{unquote($name)});
+  }
+}
+
+:root {
+  @if $colors {
+    @each $key, $value in $colors {
+      --#{$key}: #{$value};
+      --#{$key}--rgb: #{HexToRGB($value)};
+    }
+  }
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desctop: 1140px;
+
+/**  @media screen and (min-width: $bp-desctop) { **/

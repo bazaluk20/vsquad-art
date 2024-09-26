@@ -1,0 +1,132 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: coloring(base-black, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 5;
+  overflow: scroll;
+  /* opacity: 0;
+  visibility: hidden;
+  pointer-events: none; */
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  z-index: 5;
+  background-color: coloring(base-white);
+  border-radius: 8px;
+  padding: 32px 16px 40px;
+  box-shadow: 0px 6px 15px 0px coloring(base-black, 0.08);
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 64px 96px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    background-color: coloring(gray-900, 0.2);
+    border-radius: 2px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 16px;
+    right: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: 24px;
+      right: 24px;
+    }
+
+    &:hover,
+    &:active {
+      .modal__close-icon {
+        fill: coloring(primary-red-600);
+      }
+    }
+  }
+  &__close-icon {
+    fill: coloring(base-white);
+    transition: fill 0.25s;
+  }
+
+  &__heading {
+    color: coloring(gray-900);
+    text-align: center;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 16px;
+    }
+  }
+  &__description {
+    text-align: center;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 16px;
+      gap: 24px 16px;
+    }
+  }
+  &__input {
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 16px) / 2);
+    }
+  }
+  &__textarea {
+    flex-basis: 100%;
+  }
+
+  &__form-policy {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+
+      & > * {
+        flex-basis: calc((100% - 16px) / 2);
+      }
+    }
+  }
+
+  &__form-btn {
+    width: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: auto;
+      flex-basis: 210px;
+    }
+  }
+}

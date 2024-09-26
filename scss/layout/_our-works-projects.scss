@@ -1,0 +1,27 @@
+.our-works-projects {
+  background-color: coloring(gray-50);
+
+  &__heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      align-items: center;
+      flex-direction: row;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 0 !important;
+  }
+  &__heading-copy {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}

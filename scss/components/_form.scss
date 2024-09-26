@@ -1,0 +1,74 @@
+.form {
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    color: coloring(gray-900);
+    width: 100%;
+  }
+
+  &__input,
+  &__textarea {
+    border: 1px solid coloring(gray-300);
+    font-size: 14px;
+    padding: 13px 16px;
+    transition: border-color 0.25s;
+
+    &::placeholder {
+      color: coloring(text-subtitle);
+    }
+
+    &:hover {
+      border-color: coloring(gray-600);
+    }
+
+    &:focus {
+      border-color: coloring(gray-600);
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    height: 120px;
+  }
+
+  &__checkbox-input {
+    appearance: none;
+  }
+  &__checkbox-label {
+    position: relative;
+    padding-left: 26px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+    }
+  }
+  &__checkbox-label a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: coloring(gray-600);
+  }
+
+  &__checkbox-label::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    border: 1px solid coloring(gray-900);
+    border-radius: 2px;
+    margin-top: 4px;
+    background-color: coloring(base-white);
+    display: flex;
+    padding: 2px;
+  }
+  &__checkbox-input:checked + &__checkbox-label::before {
+    content: url('data:image/svg+xml,<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.45342 0.199951H8.3542C8.11514 0.199951 7.8878 0.314795 7.74717 0.51167L4.0628 5.62104L2.39405 3.30542C2.25342 3.11089 2.02842 2.9937 1.78702 2.9937H0.687797C0.535453 2.9937 0.446391 3.16714 0.535453 3.29136L3.45577 7.34136C3.52475 7.43765 3.6157 7.51611 3.72106 7.57023C3.82643 7.62436 3.94317 7.65259 4.06163 7.65259C4.18008 7.65259 4.29682 7.62436 4.40219 7.57023C4.50755 7.51611 4.5985 7.43765 4.66748 7.34136L9.60342 0.497608C9.69483 0.373389 9.60577 0.199951 9.45342 0.199951Z" fill="black"/></svg>');
+  }
+}

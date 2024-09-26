@@ -1,0 +1,33 @@
+.button {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.15;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 14px 24px;
+  border: 1px solid coloring(primary-red-600);
+  border-radius: 4px;
+  transition: all 0.25s;
+
+  &--red {
+    background-color: coloring(primary-red-600);
+    color: coloring(base-white);
+
+    &:hover {
+      background-color: coloring(primary-red-700);
+      border-color: coloring(primary-red-700);
+    }
+  }
+
+  &--dark {
+    background-color: coloring(gray-900);
+    color: coloring(primary-red-600);
+
+    &:hover {
+      color: coloring(primary-red-700);
+      border-color: coloring(primary-red-700);
+      background-color: coloring(primary-red-100);
+    }
+  }
+}

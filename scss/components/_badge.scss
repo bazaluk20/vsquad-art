@@ -1,0 +1,11 @@
+.badge {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: coloring(primary-red-600);
+  border: 1px solid coloring(primary-red-600);
+  border-radius: 5px 0 5px 0;
+  padding: 4px 8px;
+}

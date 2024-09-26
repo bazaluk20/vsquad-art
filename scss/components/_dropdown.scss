@@ -1,0 +1,103 @@
+.dropdown {
+  position: relative;
+
+  &__link {
+    transition: margin 0.25s, color 0.25s;
+
+    &::after {
+      content: url('data:image/svg+xml,<svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.684985 0.6997C0.931632 0.433433 1.33153 0.433433 1.57817 0.6997L4.5 3.85395L7.42183 0.6997C7.66847 0.433433 8.06837 0.433433 8.31501 0.6997C8.56166 0.965966 8.56166 1.39767 8.31501 1.66394L4.94659 5.3003C4.69995 5.56657 4.30005 5.56657 4.05341 5.3003L0.684985 1.66394C0.438338 1.39767 0.438338 0.965966 0.684985 0.6997Z" fill="white"/></svg>');
+      line-height: 0;
+    }
+
+    &.active {
+      color: coloring(primary-red-600);
+      margin-bottom: 16px;
+
+      @media screen and (min-width: $bp-desctop) {
+        margin-bottom: 0;
+      }
+
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__list {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s;
+
+    @media screen and (min-width: $bp-desctop) {
+      position: absolute;
+      top: 150%;
+      left: -150%;
+      z-index: 3;
+      background-color: coloring(color-light);
+      width: auto;
+      border-radius: 2px;
+      box-shadow: 0px 0px 15px 0px coloring(color-dark, 0.12);
+      background-color: coloring(gray-50);
+      box-shadow: 0px 0px 15px 0px coloring(gray-900, 0.12);
+
+      &--nav {
+        width: 570px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &__item {
+    padding: 12px 0px;
+
+    @media screen and (min-width: $bp-desctop) {
+      padding: 0;
+      flex-basis: 50%;
+    }
+  }
+
+  &__item-link {
+    flex-direction: column;
+
+    &.link {
+      align-items: flex-start;
+    }
+
+    &:active {
+      color: coloring(primary-red-600);
+    }
+
+    @media screen and (min-width: $bp-desctop) {
+      padding: 16px 24px;
+      height: 100%;
+      transition: background 0.25s !important;
+
+      &::before {
+        content: none !important;
+      }
+
+      &:hover {
+        background-color: coloring(gray-100);
+      }
+    }
+
+    &--title {
+      font-size: 16px;
+
+      @media screen and (min-width: $bp-desctop) {
+        color: coloring(primary-red-600);
+      }
+    }
+    &--description {
+      @media screen and (max-width: $bp-desctop) {
+        display: none;
+      }
+      @media screen and (min-width: $bp-desctop) {
+        color: coloring(text-body);
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/texts';
+@import './utils/utils';
+@import './base';
+
+@import './components/accordion';
+@import './components/badge';
+@import './components/go-home';
+@import './components/buttons';
+@import './components/dropdown';
+@import './components/form';
+@import './components/links';
+@import './components/lightbox';
+@import './components/pagination';
+@import './components/social';
+@import './components/tabs';
+
+@import './layout/about';
+@import './layout/contacts';
+@import './layout/container';
+@import './layout/first-screen';
+@import './layout/first-screen-project';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/projects';
+@import './layout/modal';
+@import './layout/our-works-projects';
+@import './layout/section';
+@import './layout/what-we-do';
+@import './layout/why-us';
