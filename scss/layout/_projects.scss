@@ -2,8 +2,8 @@
   @media screen and (min-width: $bp-desctop) {
     .parent {
       display: grid;
-      grid-template-columns: repeat(4, calc((100% - 72px) / 4));
-      grid-template-rows: repeat(3, 100%);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
       grid-column-gap: 24px;
       grid-row-gap: 24px;
     }
