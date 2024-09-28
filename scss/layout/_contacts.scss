@@ -23,16 +23,37 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 40px;
+    background-color: coloring(gray-50);
+    padding: 24px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
+  }
+  &__links-text {
+    margin-bottom: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 52px;
+    }
   }
 
   &__links {
-    color: coloring(gray-900);
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 8px;
+    width: 210px;
+
+    &--email {
+      color: coloring(gray-900);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
   }
 
   &__links-icon {

@@ -1,0 +1,46 @@
+.accordion {
+  border-bottom: 1px solid coloring(gray-600);
+  padding-bottom: 24px;
+  margin-bottom: 40px;
+
+  &__title {
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    color: coloring(gray-700);
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+    transition: margin 0.25s;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+
+    &.active {
+      margin-bottom: 6px;
+
+      .accordion__icon {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__icon {
+    fill: coloring(gray-900);
+    transform: rotate(270deg);
+    flex-shrink: 0;
+  }
+
+  &__panel {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.25s;
+  }
+  &__panel > *:last-child {
+    margin-bottom: 0;
+  }
+}

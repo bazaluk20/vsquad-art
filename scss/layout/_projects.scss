@@ -1,4 +1,39 @@
 .projects {
+  &__sub-heading {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 3px;
+    color: coloring(gray-300);
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    color: coloring(gray-300);
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 64px;
+    }
+
+    & p {
+      margin-bottom: 0;
+
+      &:first-child {
+        margin-bottom: 16px;
+      }
+
+      @media screen and (min-width: $bp-tablet) {
+        flex-basis: calc((100% - 24px) / 2);
+      }
+    }
+  }
+
   @media screen and (min-width: $bp-desctop) {
     .parent {
       display: grid;
@@ -133,11 +168,6 @@
     }
 
     &__btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-
       &--mobile {
         margin-bottom: 32px;
 

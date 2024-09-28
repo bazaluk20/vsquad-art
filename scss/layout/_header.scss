@@ -1,6 +1,16 @@
 .header {
-  background-color: coloring(gray-900);
+  margin-bottom: 70px;
+  @media screen and (min-width: $bp-desctop) {
+    margin-bottom: 80px;
+  }
 
+  &__fixed {
+    background-color: coloring(gray-900);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+  }
   &__content {
     position: relative;
     display: flex;

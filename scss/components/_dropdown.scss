@@ -32,7 +32,7 @@
     @media screen and (min-width: $bp-desctop) {
       position: absolute;
       top: 150%;
-      left: -150%;
+      left: calc(50% - 285px);
       z-index: 3;
       background-color: coloring(color-light);
       width: auto;
