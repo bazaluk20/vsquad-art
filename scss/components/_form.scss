@@ -1,5 +1,6 @@
 .form {
   &__label {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -34,6 +35,64 @@
     height: 120px;
   }
 
+  &__char-count {
+    position: absolute;
+    right: 0;
+  }
+
+  &__radio-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+
+  &__radio {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    transition: color 0.25s;
+    cursor: pointer;
+
+    input[type='radio'] {
+      display: none;
+    }
+
+    input[type='radio']:checked + .form__radio-checkmark {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid coloring(gray-900);
+
+      &::before {
+        content: '';
+        width: 80%;
+        height: 80%;
+        background-color: coloring(gray-900);
+        border-radius: 50%;
+      }
+    }
+    &:hover {
+      color: coloring(primary-red-600);
+    }
+  }
+
+  &__radio-checkmark {
+    width: 16px;
+    height: 16px;
+    border: 1px solid coloring(gray-900);
+    border-radius: 50%;
+  }
+
   &__checkbox-input {
     appearance: none;
   }
@@ -64,6 +123,8 @@
     margin-top: 4px;
     background-color: coloring(base-white);
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2px;
   }
   &__checkbox-input:checked + &__checkbox-label::before {

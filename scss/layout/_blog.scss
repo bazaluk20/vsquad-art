@@ -50,9 +50,11 @@
   &__search-input {
     background-color: coloring(base-white);
     border: 1px solid coloring(gray-300);
+    font-size: 14px;
     border-radius: 2px;
     padding: 13px 16px 13px 48px;
     width: 100%;
+    height: 50px;
 
     &::placeholder {
       color: coloring(text-subtitle);
@@ -84,11 +86,34 @@
     color: coloring(gray-900);
     font-size: 12px;
   }
+
+  &__select-wrapper {
+    position: relative;
+
+    &::after {
+      content: url('data:image/svg+xml,<svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.684985 0.6997C0.931632 0.433433 1.33153 0.433433 1.57817 0.6997L4.5 3.85395L7.42183 0.6997C7.66847 0.433433 8.06837 0.433433 8.31501 0.6997C8.56166 0.965966 8.56166 1.39767 8.31501 1.66394L4.94659 5.3003C4.69995 5.56657 4.30005 5.56657 4.05341 5.3003L0.684985 1.66394C0.438338 1.39767 0.438338 0.965966 0.684985 0.6997Z" fill="%2318171C"/></svg>');
+      position: absolute;
+      top: 40%;
+      right: 16px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+
   &__sorted-select {
     background-color: coloring(base-white);
+    font-size: 14px;
     padding: 13px 16px;
     border: 1px solid coloring(gray-300);
     border-radius: 2px;
+    width: 100%;
+    appearance: none;
+    height: 50px;
+
+    &:focus {
+      border-color: coloring(gray-600);
+      outline: none;
+    }
   }
 
   &__list {

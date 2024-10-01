@@ -1420,7 +1420,7 @@
           >
             FAQ
           </h2>
-          <div class="faq__wrapper text-in-two-column">
+          <div class="faq__wrapper">
             <div class="accordion">
               <button type="button" class="accordionBtn accordion__title">
                 What art styles do you work with? What can you help with?
@@ -1630,13 +1630,16 @@
                       placeholder="Example: email@gmail.com"
                     />
                   </label>
-                  <label class="form__label">
+
+                  <label class="form__label textareaCount">
                     Message
+                    <span class="form__char-count char-count">0/500</span>
                     <textarea
                       class="form__textarea"
                       name="message"
                       id="user-message"
                       placeholder="Write a message"
+                      maxlength="500"
                     ></textarea>
                   </label>
                 </div>
@@ -1815,13 +1818,16 @@
                   placeholder="Example: email@gmail.com"
                 />
               </label>
-              <label class="form__label modal__textarea">
+
+              <label class="form__label modal__textarea textareaCount">
                 Message
+                <span class="form__char-count char-count">0/500</span>
                 <textarea
                   class="form__textarea"
                   name="message"
                   id="message"
                   placeholder="Write a message"
+                  maxlength="500"
                 ></textarea>
               </label>
             </div>
@@ -1863,5 +1869,6 @@
     <script src="./js/slider-what-we-do.js"></script>
     <script src="./js/slider-blog-list.js"></script>
     <script src="./js/slider-projects.js"></script>
+    <script src="./js/textareaCounter.js"></script>
   </body>
 </html>

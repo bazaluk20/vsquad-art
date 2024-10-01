@@ -2,6 +2,7 @@
   border-bottom: 1px solid coloring(gray-600);
   padding-bottom: 24px;
   margin-bottom: 40px;
+  break-inside: avoid;
 
   &__title {
     position: relative;

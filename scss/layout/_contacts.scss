@@ -48,20 +48,20 @@
       gap: 12px;
     }
     @media screen and (min-width: $bp-desctop) {
-      gap: 52px;
+      gap: 48px;
     }
   }
 
   &__links {
     width: 210px;
     padding: 6px 16px;
+    justify-content: flex-start;
 
     &--email {
       color: coloring(gray-900);
       font-weight: 600;
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 8px;
     }
   }

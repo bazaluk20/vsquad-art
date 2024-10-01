@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 8px;
     flex-direction: column;
     margin-bottom: 24px;
@@ -23,5 +24,8 @@
   &__heading-copy {
     font-size: 16px;
     margin-bottom: 0;
+  }
+  &__heading-description {
+    flex-basis: 100%;
   }
 }

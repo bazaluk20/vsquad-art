@@ -41,6 +41,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
     }
   }
   &__heading-wrapper-line {
@@ -68,6 +70,9 @@
       align-items: center;
       gap: 16px;
     }
+  }
+  &__description {
+    flex-basis: 100%;
   }
   &__project {
     color: coloring(primary-red-600);

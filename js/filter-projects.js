@@ -1,14 +1,20 @@
 document
   .querySelector('.select-selected')
   .addEventListener('click', function () {
-    this.classList.toggle('select-arrow-active');
     var items = this.nextElementSibling;
     items.classList.toggle('select-hide');
   });
 
+filterSelection('all', null);
+
 function filterSelection(value, element) {
-  document.querySelector('.select-selected').innerText =
-    element.innerText.trim();
+  if (element === null) {
+    element = document.querySelector('#defaultFilterOption');
+    document.querySelector('.select-selected').innerText = 'ALL';
+  } else {
+    document.querySelector('.select-selected').innerText = element.innerText;
+  }
+
   document.querySelector('.select-items').classList.add('select-hide');
   document
     .querySelectorAll('.select-option')
@@ -23,7 +29,6 @@ function filterSelection(value, element) {
     if (x[i].className.indexOf(value) > -1) w3AddClass(x[i], 'show');
   }
 }
-document.getElementById('defaultFilterOption').click();
 
 document.addEventListener('click', function (event) {
   var selectBox = document.querySelector('#filterDropdown');
@@ -57,3 +62,5 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(' ');
 }
+
+// document.getElementById('defaultFilterOption').click();

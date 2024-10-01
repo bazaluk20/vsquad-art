@@ -1,3 +1,15 @@
 .faq {
   background-color: coloring(gray-50);
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0 64px;
+
+    & > * {
+      flex-basis: calc((100% - 64px) / 2);
+    }
+  }
 }

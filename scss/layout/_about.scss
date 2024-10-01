@@ -53,8 +53,7 @@
     }
   }
 
-  &__work-in-list,
-  &__work-in-item {
+  &__work-in-list {
     display: flex;
     flex-wrap: wrap;
     gap: 16px 8px;
@@ -64,6 +63,9 @@
     }
   }
   &__work-in-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 8px;
     align-items: center;
     padding-left: 8px;
 
@@ -73,6 +75,11 @@
       height: 6px;
       background-color: coloring(gray-600);
       border-radius: 3px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 16px;
+      min-width: 120px;
     }
   }
 }
