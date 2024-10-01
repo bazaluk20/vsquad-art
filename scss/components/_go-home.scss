@@ -1,4 +1,12 @@
 .go-home {
+  &--only {
+    padding: 24px 0 16px;
+
+    @media screen and (min-width: $bp-desctop) {
+      padding: 80px 0 24px;
+    }
+  }
+
   &__link {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;

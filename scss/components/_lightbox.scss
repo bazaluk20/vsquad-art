@@ -43,6 +43,15 @@
       justify-content: space-between;
     }
   }
+  &__heading-wrapper-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .lightbox__heading {
+      margin-bottom: 0;
+    }
+  }
   &__heading {
     margin-bottom: 8px;
 
@@ -59,6 +68,10 @@
       align-items: center;
       gap: 16px;
     }
+  }
+  &__project {
+    color: coloring(primary-red-600);
+    margin-bottom: 0;
   }
 }
 

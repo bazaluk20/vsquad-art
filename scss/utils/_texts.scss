@@ -2,6 +2,7 @@
 .title-h2,
 .title-h4,
 .title-h5,
+.title-h5-big,
 .title-h6,
 .title-h7 {
   font-family: 'Rajdhani', sans-serif;
@@ -28,6 +29,13 @@
 }
 .title-h5 {
   font-size: 16px;
+  line-height: 1.25;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 24px;
+  }
+}
+.title-h5-big {
+  font-size: 20px;
   line-height: 1.25;
   @media screen and (min-width: $bp-tablet) {
     font-size: 24px;

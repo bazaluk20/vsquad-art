@@ -1,3 +1,117 @@
+.blog {
+  background-color: coloring(gray-50);
+
+  &__go-home {
+    padding-bottom: 24px;
+    @media screen and (min-width: $bp-tablet) {
+      padding-bottom: 32px;
+    }
+  }
+
+  &__heading-wrapper {
+    margin-bottom: 36px;
+
+    @media screen and (min-width: $bp-desctop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__heading {
+    @media screen and (min-width: $bp-desctop) {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__sorting-wrapper {
+    @media screen and (min-width: $bp-desctop) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      gap: 16px;
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
+
+  &__search {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-desctop) {
+      margin-bottom: 0;
+    }
+  }
+  &__search-input {
+    background-color: coloring(base-white);
+    border: 1px solid coloring(gray-300);
+    border-radius: 2px;
+    padding: 13px 16px 13px 48px;
+    width: 100%;
+
+    &::placeholder {
+      color: coloring(text-subtitle);
+    }
+    &:focus {
+      border-color: coloring(gray-600);
+      outline: none;
+    }
+  }
+  &__search-btn {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    padding-left: 12px;
+  }
+
+  &__sorted {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    gap: 4px;
+  }
+  &__sorted-title {
+    color: coloring(gray-900);
+    font-size: 12px;
+  }
+  &__sorted-select {
+    background-color: coloring(base-white);
+    padding: 13px 16px;
+    border: 1px solid coloring(gray-300);
+    border-radius: 2px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 64px 24px;
+    }
+  }
+
+  &__item {
+    flex-basis: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 48px) / 3);
+    }
+  }
+}
+
 .blog-list {
   position: relative;
 

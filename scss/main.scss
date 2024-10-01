@@ -6,6 +6,7 @@
 
 @import './components/accordion';
 @import './components/badge';
+@import './components/filter-projects';
 @import './components/go-home';
 @import './components/buttons';
 @import './components/dropdown';
@@ -15,19 +16,28 @@
 @import './components/pagination';
 @import './components/social';
 @import './components/tabs';
+@import './components/video-play';
 
 @import './layout/about';
+@import './layout/article';
 @import './layout/blog';
 @import './layout/contacts';
 @import './layout/container';
 @import './layout/first-screen';
 @import './layout/first-screen-project';
+@import './layout/first-screen-wwd';
+@import './layout/first-screen-404';
+@import './layout/job';
 @import './layout/faq';
 @import './layout/footer';
 @import './layout/header';
 @import './layout/projects';
 @import './layout/modal';
+@import './layout/our-game';
 @import './layout/our-works-projects';
+@import './layout/our-works-wwd';
+@import './layout/stages';
 @import './layout/section';
+@import './layout/text-content';
 @import './layout/what-we-do';
 @import './layout/why-us';

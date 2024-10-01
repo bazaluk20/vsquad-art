@@ -1,0 +1,40 @@
+.video-play {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  & img {
+    width: 100%;
+  }
+
+  &__iframe {
+    height: 100%;
+    min-height: 230px;
+  }
+  &__cover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+  }
+  &__btn {
+    position: absolute;
+    top: calc((100% - 80px) / 2);
+    left: calc((100% - 80px) / 2);
+    fill: coloring(base-white);
+    background-color: transparent;
+    border: none;
+    transition: fill 0.25s;
+
+    &:hover {
+      fill: coloring(primary-red-600);
+    }
+  }
+}

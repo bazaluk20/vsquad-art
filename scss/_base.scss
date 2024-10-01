@@ -34,6 +34,8 @@ p {
 a {
   display: inline-block;
   text-decoration: none;
+  color: coloring(gray-600);
+  font-weight: 700;
 }
 button {
   cursor: pointer;

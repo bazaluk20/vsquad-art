@@ -138,9 +138,11 @@
 
   &__navmenu {
     margin-bottom: 48px;
+    overflow-y: scroll;
 
     @media screen and (min-width: $bp-desctop) {
       margin-bottom: 0;
+      overflow: visible;
     }
   }
 
@@ -181,6 +183,10 @@
       @media screen and (min-width: $bp-desctop) {
         font-size: 16px;
       }
+    }
+
+    & .active-page {
+      color: coloring(primary-red-600);
     }
 
     &--mobile-item {

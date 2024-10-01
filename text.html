@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./image/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Policy & Cookie</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__fixed">
+        <div class="container">
+          <div class="header__content">
+            <div class="header__logo-wrapper">
+              <a class="header__logo" href="./index.html">
+                <img src="./image/logo_white.svg" alt="VSQuad ART" />
+              </a>
+            </div>
+            <button id="burgerBtn" class="header__burger" type="button">
+              <span class="header__burger--line"></span>
+            </button>
+            <div id="menuNav" class="header__nav-wrapper">
+              <nav class="header__navmenu">
+                <ul class="header__navmenu-list">
+                  <li class="header__navmenu-item dropdown">
+                    <a href="#what-we-do" class="dropdown__link link ddBtn">
+                      What we do
+                    </a>
+                    <ul class="dropdown__list dropdown__list--nav ddList">
+                      <li class="dropdown__item">
+                        <a
+                          href="./what-we-do/2d-character.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            2D CHARACTER
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Craft engaging, visually stunning characters to
+                            captivate your audience.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="./what-we-do/3d-character.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            3D CHARACTER
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Immerse players in beautifully crafted,
+                            two-dimensional worlds, each with its unique
+                            atmosphere.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="./what-we-do/2d-environment.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            2D ENVIRONMENT
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Bring depth and realism to your game with
+                            intricately designed three-dimensional characters.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="./what-we-do/3d-environment.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            3D ENVIRONMENT
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Create expansive, lifelike three-dimensional
+                            settings that offer an unparalleled gaming
+                            experience.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="./what-we-do/3d-animation.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            3D ANIMATION
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Infuse dynamic, fluid movements into your characters
+                            and environments, making your game world truly come
+                            to life.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#contacts" class="dropdown__item-link link">
+                          <span class="dropdown__item-link--title">
+                            Contact Us
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Feel free to contact us in any way convenient for
+                            you. Let’s create beautiful project together!
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__navmenu-item">
+                    <a href="#about" class="link">About us</a>
+                  </li>
+                  <li class="header__navmenu-item">
+                    <a href="#why-su" class="link">Why us</a>
+                  </li>
+                  <li class="header__navmenu-item dropdown">
+                    <a href="#prijects" class="dropdown__link link ddBtn">
+                      Projects
+                    </a>
+                    <ul class="dropdown__list dropdown__list--nav ddList">
+                      <li class="dropdown__item">
+                        <a
+                          href="./projects/wayfinder.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            WAYFINDER
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We working on this project as 3D artists creating
+                            characters.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="./projects/darksiders-genesis.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            Darksiders Genesis
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We worked on this project as 3D designers creating
+                            characters.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="./projects/battle-chasers.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            Battle Chasers
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We worked on this project as 3D designers creating
+                            characters, monsters and environment.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="./projects/ruined-king.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            Ruined King
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We worked on this project as 3D designers creating
+                            characters, monsters and weapon.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="./projects/smite.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            SMITE
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We worked on this project as 3D designers creating
+                            characters.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="./404.html" class="dropdown__item-link link">
+                          <span class="dropdown__item-link--title">
+                            Page 404
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We approached the creating of figure with great love
+                            and respect for the original source.
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__navmenu-item">
+                    <a href="./blog.html" class="link">Blog</a>
+                  </li>
+                  <li class="header__navmenu-item">
+                    <a href="./contacts.html" class="link">Contact us</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__social-icon">
+                <a href="#artstation" class="social-circle" target="_blank">
+                  <svg class="social-circle__icons" width="24px" height="24px">
+                    <use href="./image/sprite.svg#icon-artstation"></use>
+                  </svg>
+                </a>
+                <a href="mailto:user@email.com" class="social-circle">
+                  <svg class="social-circle__icons" width="24px" height="24px">
+                    <use href="./image/sprite.svg#icon-email"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="go-home go-home--only">
+          <a class="go-home__link go-home__link--dark" href="./index.html">
+            <svg class="go-home__icon" width="16px" height="16px">
+              <use href="./image/sprite.svg#icon-arrow"></use>
+            </svg>
+            Home
+          </a>
+        </div>
+      </div>
+      <section class="text-content">
+        <div class="container">
+          <article>
+            <h1 class="text-content__heading title-h2">
+              PRIVACY POLICY & Cookies Policy
+            </h1>
+            <p class="text-content__publish">Last update: 12/21/2023</p>
+
+            <div class="text-content__content">
+              <p>
+                This Cookies Policy describes our policies and procedures on the
+                collection, use and disclosure of your information when you use
+                the Service and tells you about your privacy rights and how the
+                law protects you.
+              </p>
+              <h2>Interpretation and Definitions</h2>
+              <h3>Interpretation</h3>
+              <p>
+                The words of which the initial letter is capitalized have
+                meanings defined under the following conditions. The following
+                definitions shall have the same meaning regardless of whether
+                they appear in singular or in plural.
+              </p>
+              <h3>Definitions</h3>
+              <p>For the purposes of this Cookies Policy:</p>
+              <ul>
+                <li>
+                  Account means a unique account created for You to access our
+                  Service or parts of our Service.
+                </li>
+                <li>
+                  Affiliate means an entity that controls, is controlled by or
+                  is under common control with a party, where "control" means
+                  ownership of 50% or more of the shares, equity interest or
+                  other securities entitled to vote for election of directors or
+                  other managing authority.
+                </li>
+                <li>
+                  Company (referred to as either "the Company", "We", "Us" or
+                  "Our" in this Agreement) refers to vsquad, 1.
+                </li>
+                <li>
+                  Cookies are small files that are placed on Your computer,
+                  mobile device or any other device by a website, containing the
+                  details of Your browsing history on that website among its
+                  many uses.
+                </li>
+                <li>
+                  Device means any device that can access the Service such as a
+                  computer, a cellphone or a digital tablet.
+                </li>
+                <li>
+                  Personal Data is any information that relates to an identified
+                  or identifiable individual.
+                </li>
+                <li>Service refers to the Website.</li>
+                <li>
+                  Service Provider means any natural or legal person who
+                  processes the data on behalf of the Company. It refers to
+                  third-party companies or individuals employed by the Company
+                  to facilitate the Service, to provide the Service on behalf of
+                  the Company, to perform services related to the Service or to
+                  assist the Company in analyzing how the Service is used.
+                </li>
+                <li>
+                  Usage Data refers to data collected automatically, either
+                  generated by the use of the Service or from the Service
+                  infrastructure itself (for example, the duration of a page
+                  visit).
+                </li>
+                <li>Website refers to vsquad, accessible from vsquad.com</li>
+                <li>
+                  You means the individual accessing or using the Service, or
+                  the company, or other legal entity on behalf of which such
+                  individual is accessing or using the Service, as applicable.
+                </li>
+              </ul>
+              <h2>Collecting and Using Your Personal Data</h2>
+              <h3>Types of Data Collected</h3>
+              <h4>Personal Data</h4>
+              <p>
+                While using Our Service, We may ask You to provide Us with
+                certain personally identifiable information that can be used to
+                contact or identify You. Personally identifiable information may
+                include, but is not limited to: Usage Data
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <a class="footer__logo-image" href="#">
+              <img src="./image/logo_white.svg" alt="logo" />
+            </a>
+            <p class="footer__copy">&copy; VSQUAD. All rights reserved</p>
+          </div>
+          <div class="footer__menu">
+            <ul>
+              <li><a class="footer__menu-link link" href="#">About us</a></li>
+              <li><a class="footer__menu-link link" href="#">WHY US</a></li>
+              <li>
+                <a class="footer__menu-link link" href="./contacts.html"
+                  >Contacts</a
+                >
+              </li>
+              <li>
+                <a class="footer__menu-link link" href="./blog.html">Blog</a>
+              </li>
+              <li>
+                <a class="footer__menu-link link" href="./text.html">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a class="footer__menu-link link" href="./text.html">
+                  Cookies Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__submenu">
+            <div class="footer__list">
+              <p class="footer__sub-heading title-h7">What we do</p>
+              <ul>
+                <li>
+                  <a class="footer__submenu-link" href="#">2D CHARACTER</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">2D ENVIRONMENT</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">3D CHARACTER</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">3D ANIMATION</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list">
+              <p class="footer__sub-heading title-h7">Projects</p>
+              <ul>
+                <li><a class="footer__submenu-link" href="#">WAYFINDER</a></li>
+                <li>
+                  <a class="footer__submenu-link" href="#">
+                    DARKSIDERS GENESIS
+                  </a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">BATTLE CHASERS</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">RUINED KING</a>
+                </li>
+                <li><a class="footer__submenu-link" href="#">SMITE</a></li>
+                <li>
+                  <a class="footer__submenu-link" href="#">OWN PROJECTS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__social">
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="./image/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="./image/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="./image/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="./image/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="./image/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+            <a href="mailto:head@vsquad.art" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="./image/sprite.svg#icon-email"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/slider-what-we-do.js"></script>
+    <script src="./js/slider-blog-list.js"></script>
+    <script src="./js/slider-projects.js"></script>
+    <script src="./js/video-play.js"></script>
+  </body>
+</html>

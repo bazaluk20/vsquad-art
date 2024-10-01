@@ -1,0 +1,84 @@
+.filter-projects {
+  position: relative;
+  width: 100%;
+
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 400px;
+  }
+
+  &__title {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  &__select {
+    position: relative;
+  }
+
+  &__selected {
+    background-color: transparent;
+    padding: 13px 16px;
+    border: 1px solid coloring(gray-300);
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      content: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.68499 8.6997C7.93163 8.43343 8.33153 8.43343 8.57817 8.6997L11.5 11.8539L14.4218 8.6997C14.6685 8.43343 15.0684 8.43343 15.315 8.6997C15.5617 8.96597 15.5617 9.39767 15.315 9.66394L11.9466 13.3003C11.6999 13.5666 11.3001 13.5666 11.0534 13.3003L7.68499 9.66394C7.43834 9.39767 7.43834 8.96597 7.68499 8.6997Z" fill="%2318171C"/></svg>');
+    }
+  }
+
+  &__items {
+    position: absolute;
+    background-color: coloring(gray-50);
+    width: 100%;
+    border: 1px solid coloring(gray-100);
+    z-index: 10;
+    transition: visibility 0.25s, opacity 0.25s ease;
+    box-shadow: 0px 0px 15px 0px coloring(gray-900, 0.12);
+  }
+
+  .select-hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__option {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    border-bottom: 1px solid coloring(gray-100);
+
+    &:hover {
+      background-color: coloring(gray-100);
+    }
+
+    &.active {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &::after {
+        content: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 7L10 17L5 12" stroke="%2318171C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.filterDiv {
+  display: none;
+
+  &.show {
+    display: block;
+  }
+}

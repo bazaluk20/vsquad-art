@@ -1,12 +1,13 @@
 .tabs {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
   border-bottom: 1px solid coloring(gray-600);
   margin-bottom: 24px;
 
   @media screen and (min-width: $bp-tablet) {
+    justify-content: center;
     gap: 80px;
   }
 
@@ -16,9 +17,11 @@
     border-bottom: 3px solid transparent;
     padding: 8px 0;
     text-transform: uppercase;
-    color: coloring(gray-100);
+    color: coloring(gray-600);
+    transition: color 0.25s, border-bottom 0.25s;
 
-    &.active {
+    &.active,
+    &:hover {
       color: coloring(primary-red-600);
       border-bottom: 3px solid coloring(primary-red-600);
     }

@@ -1,0 +1,12 @@
+.article {
+  background-color: coloring(gray-50);
+  padding: 32px 0 64px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 80px 0 100px;
+  }
+
+  &__go-home {
+    margin-bottom: 32px;
+  }
+}

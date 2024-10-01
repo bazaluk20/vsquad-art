@@ -1,33 +1,35 @@
-function openTabWhatWeDo(evt, tabCont) {
-  let tabcontents, tablinks;
-  tabcontents = document.querySelectorAll('.tabcontent-wwd');
-  for (tabcontent of tabcontents) {
-    tabcontent.style.display = 'none';
+if (document.querySelector('.tabs')) {
+  function openTabWhatWeDo(evt, tabCont) {
+    let tabcontents, tablinks;
+    tabcontents = document.querySelectorAll('.tabcontent-wwd');
+    for (tabcontent of tabcontents) {
+      tabcontent.style.display = 'none';
+    }
+
+    tablinks = document.querySelectorAll('.tablinks-wwd');
+    for (tablink of tablinks) {
+      tablink.className = tablink.className.replace(' active', '');
+    }
+    document.getElementById(tabCont).style.display = 'block';
+    evt.currentTarget.className += ' active';
   }
 
-  tablinks = document.querySelectorAll('.tablinks-wwd');
-  for (tablink of tablinks) {
-    tablink.className = tablink.className.replace(' active', '');
+  function openTabProject(evt, tabCont) {
+    let tabcontents, tablinks;
+    tabcontents = document.querySelectorAll('.tabcontent-project');
+    for (tabcontent of tabcontents) {
+      tabcontent.style.display = 'none';
+    }
+
+    tablinks = document.querySelectorAll('.tablinks-project');
+    for (tablink of tablinks) {
+      tablink.className = tablink.className.replace(' active', '');
+    }
+    document.getElementById(tabCont).style.display = 'block';
+    evt.currentTarget.className += ' active';
   }
-  document.getElementById(tabCont).style.display = 'block';
-  evt.currentTarget.className += ' active';
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById('defaultOpenWhatWeDo').click();
+  document.getElementById('defaultOpenProject').click();
 }
-
-function openTabProject(evt, tabCont) {
-  let tabcontents, tablinks;
-  tabcontents = document.querySelectorAll('.tabcontent-project');
-  for (tabcontent of tabcontents) {
-    tabcontent.style.display = 'none';
-  }
-
-  tablinks = document.querySelectorAll('.tablinks-project');
-  for (tablink of tablinks) {
-    tablink.className = tablink.className.replace(' active', '');
-  }
-  document.getElementById(tabCont).style.display = 'block';
-  evt.currentTarget.className += ' active';
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById('defaultOpenWhatWeDo').click();
-document.getElementById('defaultOpenProject').click();

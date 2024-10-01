@@ -20,12 +20,19 @@
     z-index: 1;
   }
 
-  &__description {
+  &__description,
+  &__text {
     margin-bottom: 32px;
+    color: coloring(gray-300);
 
     @media screen and (min-width: $bp-tablet) {
-      max-width: 456px;
       margin: 0 auto 64px;
+    }
+  }
+
+  &__description {
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 456px;
       text-align: center;
     }
   }

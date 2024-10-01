@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../image/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <title>3D Character</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__fixed">
+        <div class="container">
+          <div class="header__content">
+            <div class="header__logo-wrapper">
+              <a class="header__logo" href="../index.html">
+                <img src="../image/logo_white.svg" alt="VSQuad ART" />
+              </a>
+            </div>
+            <button id="burgerBtn" class="header__burger" type="button">
+              <span class="header__burger--line"></span>
+            </button>
+            <div id="menuNav" class="header__nav-wrapper">
+              <nav class="header__navmenu">
+                <ul class="header__navmenu-list">
+                  <li class="header__navmenu-item dropdown">
+                    <a
+                      href="#what-we-do"
+                      class="dropdown__link link ddBtn active-page"
+                    >
+                      What we do
+                    </a>
+                    <ul class="dropdown__list dropdown__list--nav ddList">
+                      <li class="dropdown__item">
+                        <a
+                          href="../what-we-do/2d-character.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            2D CHARACTER
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Craft engaging, visually stunning characters to
+                            captivate your audience.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="../what-we-do/3d-character.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            3D CHARACTER
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Immerse players in beautifully crafted,
+                            two-dimensional worlds, each with its unique
+                            atmosphere.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="../what-we-do/2d-environment.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            2D ENVIRONMENT
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Bring depth and realism to your game with
+                            intricately designed three-dimensional characters.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="../what-we-do/3d-environment.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            3D ENVIRONMENT
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Create expansive, lifelike three-dimensional
+                            settings that offer an unparalleled gaming
+                            experience.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="../what-we-do/3d-animation.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            3D ANIMATION
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Infuse dynamic, fluid movements into your characters
+                            and environments, making your game world truly come
+                            to life.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="../contacts.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            Contact Us
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            Feel free to contact us in any way convenient for
+                            you. Let’s create beautiful project together!
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__navmenu-item">
+                    <a href="#about" class="link">About us</a>
+                  </li>
+                  <li class="header__navmenu-item">
+                    <a href="#why-su" class="link">Why us</a>
+                  </li>
+                  <li class="header__navmenu-item dropdown">
+                    <a href="#prijects" class="dropdown__link link ddBtn">
+                      Projects
+                    </a>
+                    <ul class="dropdown__list dropdown__list--nav ddList">
+                      <li class="dropdown__item">
+                        <a
+                          href="../projects/wayfinder.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            WAYFINDER
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We working on this project as 3D artists creating
+                            characters.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="../projects/darksiders-genesis.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            Darksiders Genesis
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We worked on this project as 3D designers creating
+                            characters.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="../projects/battle-chasers.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            Battle Chasers
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We worked on this project as 3D designers creating
+                            characters, monsters and environment.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="../projects/ruined-king.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            Ruined King
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We worked on this project as 3D designers creating
+                            characters, monsters and weapon.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a
+                          href="../projects/smite.html"
+                          class="dropdown__item-link link"
+                        >
+                          <span class="dropdown__item-link--title">
+                            SMITE
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We worked on this project as 3D designers creating
+                            characters.
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="../404.html" class="dropdown__item-link link">
+                          <span class="dropdown__item-link--title">
+                            Page 404
+                          </span>
+                          <span class="dropdown__item-link--description">
+                            We approached the creating of figure with great love
+                            and respect for the original source.
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__navmenu-item">
+                    <a href="../blog.html" class="link">Blog</a>
+                  </li>
+                  <li class="header__navmenu-item">
+                    <a href="../contacts.html" class="link">Contact us</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__social-icon">
+                <a href="#artstation" class="social-circle" target="_blank">
+                  <svg class="social-circle__icons" width="24px" height="24px">
+                    <use href="../image/sprite.svg#icon-artstation"></use>
+                  </svg>
+                </a>
+                <a href="mailto:user@email.com" class="social-circle">
+                  <svg class="social-circle__icons" width="24px" height="24px">
+                    <use href="../image/sprite.svg#icon-email"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="first-screen-wwd">
+        <div class="container">
+          <div class="first-screen-wwd__go-home go-home">
+            <a class="go-home__link go-home__link--light" href="../index.html">
+              <svg class="go-home__icon" width="16px" height="16px">
+                <use href="../image/sprite.svg#icon-arrow"></use>
+              </svg>
+              Home
+            </a>
+          </div>
+          <div class="first-screen-wwd__content">
+            <h1 class="first-screen-wwd__heading title-h1">3D CHARACTER</h1>
+            <p class="first-screen-wwd__description">
+              Bring depth and realism to your game with intricately designed
+              three-dimensional characters.
+            </p>
+            <h2 class="first-screen-wwd__we-work-in title-h4">We work in:</h2>
+            <ul class="first-screen-wwd__in-list title-h5">
+              <li class="first-screen-wwd__in-item">Maya</li>
+              <li class="first-screen-wwd__in-item">3d max</li>
+              <li class="first-screen-wwd__in-item">Modo</li>
+              <li class="first-screen-wwd__in-item">Blender</li>
+              <li class="first-screen-wwd__in-item">Zbrush</li>
+              <li class="first-screen-wwd__in-item">Photoshop</li>
+              <li class="first-screen-wwd__in-item">3D coat</li>
+              <li class="first-screen-wwd__in-item">Unreal</li>
+              <li class="first-screen-wwd__in-item">Unity</li>
+              <li class="first-screen-wwd__in-item">Substance painter</li>
+              <li class="first-screen-wwd__in-item">Marmoset</li>
+            </ul>
+            <button
+              class="first-screen-wwd__btn button button--red modal-btn-open"
+            >
+              ORDER A PROJECT
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-works-wwd section">
+        <div class="container">
+          <div class="our-works-wwd__heading-wrapper">
+            <h2
+              class="our-works-wwd__heading section__heading title-h2 section__heading--dark"
+            >
+              Our Works
+            </h2>
+            <div class="our-works-wwd__filter">
+              <div class="filter-projects">
+                <span class="filter-projects__title">Filter by project:</span>
+                <div class="filter-projects__select" id="filterDropdown">
+                  <div class="filter-projects__selected select-selected">
+                    All
+                  </div>
+                  <div class="filter-projects__items select-items select-hide">
+                    <div
+                      id="defaultFilterOption"
+                      class="filter-projects__option select-option"
+                      onclick="filterSelection('all', this)"
+                    >
+                      All
+                    </div>
+                    <div
+                      class="filter-projects__option select-option"
+                      onclick="filterSelection('wayfinder', this)"
+                    >
+                      WAYFINDER
+                    </div>
+                    <div
+                      class="filter-projects__option select-option"
+                      onclick="filterSelection('darksiders-genesis', this)"
+                    >
+                      Darksiders Genesis
+                    </div>
+                    <div
+                      class="filter-projects__option select-option"
+                      onclick="filterSelection('battle-chasers', this)"
+                    >
+                      Battle Chasers
+                    </div>
+                    <div
+                      class="filter-projects__option select-option"
+                      onclick="filterSelection('ruined-king', this)"
+                    >
+                      Ruined King
+                    </div>
+                    <div
+                      class="filter-projects__option select-option"
+                      onclick="filterSelection('smite', this)"
+                    >
+                      SMITE
+                    </div>
+                    <div
+                      class="filter-projects__option select-option"
+                      onclick="filterSelection('our-works', this)"
+                    >
+                      Our works
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="our-works-wwd__lightbox lightbox">
+            <div class="lightbox__content filterDiv our-works">
+              <div class="lightbox__image-wrapper">
+                <img
+                  class="lightbox__image lightbox-image"
+                  src="../image/our-work/lilith-min.jpg"
+                  alt="Lilith"
+                  data-link="#link-to-artstation-Lilith"
+                />
+              </div>
+              <div class="lightbox__heading-wrapper-line">
+                <p class="lightbox__heading title-h5">Lilith</p>
+                <p class="lightbox__project title-h5">/ Our works</p>
+              </div>
+            </div>
+            <div class="lightbox__content filterDiv our-works">
+              <div class="lightbox__image-wrapper">
+                <img
+                  class="lightbox__image lightbox-image"
+                  src="../image/our-work/kondor-min.jpg"
+                  alt="Lilith"
+                  data-link="#link-to-artstation-Kondor"
+                />
+              </div>
+              <div class="lightbox__heading-wrapper-line">
+                <p class="lightbox__heading title-h5">Kondor</p>
+                <p class="lightbox__project title-h5">/ Our works</p>
+              </div>
+            </div>
+            <div class="lightbox__content filterDiv wayfinder">
+              <div class="lightbox__image-wrapper">
+                <img
+                  class="lightbox__image lightbox-image"
+                  src="../image/our-work/horror-cave-min.jpg"
+                  alt="Lilith"
+                  data-link="#link-to-artstation-Horror-Cave"
+                />
+              </div>
+              <div class="lightbox__heading-wrapper-line">
+                <p class="lightbox__heading title-h5">Horror Cave</p>
+                <p class="lightbox__project title-h5">/ WAYFINDER</p>
+              </div>
+            </div>
+            <div class="lightbox__content filterDiv wayfinder">
+              <div class="lightbox__image-wrapper">
+                <img
+                  class="lightbox__image lightbox-image"
+                  src="../image/our-work/stomper-min.jpg"
+                  alt="Hollow"
+                  data-link="#link-to-artstation-Stomper"
+                />
+              </div>
+              <div class="lightbox__heading-wrapper-line">
+                <p class="lightbox__heading title-h5">Stomper</p>
+                <p class="lightbox__project title-h5">/ WAYFINDER</p>
+              </div>
+            </div>
+            <div class="lightbox__content filterDiv darksiders-genesis">
+              <div class="lightbox__image-wrapper">
+                <img
+                  class="lightbox__image lightbox-image"
+                  src="../image/our-work/war-min.jpg"
+                  alt="Horror Cave"
+                  data-link="#link-to-artstation-WAR"
+                />
+              </div>
+              <div class="lightbox__heading-wrapper-line">
+                <p class="lightbox__heading title-h5">WAR</p>
+                <p class="lightbox__project title-h5">/ Darksiders Genesis</p>
+              </div>
+            </div>
+            <div class="lightbox__content filterDiv darksiders-genesis">
+              <div class="lightbox__image-wrapper">
+                <img
+                  class="lightbox__image lightbox-image"
+                  src="../image/our-work/waterboss-min.jpg"
+                  alt="Axe"
+                  data-link="#link-to-artstation-WaterBoss"
+                />
+              </div>
+              <div class="lightbox__heading-wrapper-line">
+                <p class="lightbox__heading title-h5">WaterBoss</p>
+                <p class="lightbox__project title-h5">/ Darksiders Genesis</p>
+              </div>
+            </div>
+            <div class="lightbox__content filterDiv battle-chasers">
+              <div class="lightbox__image-wrapper">
+                <img
+                  class="lightbox__image lightbox-image"
+                  src="../image/our-work/skeloton-boss-min.jpg"
+                  alt="Skeleton Boss"
+                  data-link="#link-to-artstation-Skeleton-Boss"
+                />
+              </div>
+              <div class="lightbox__heading-wrapper-line">
+                <p class="lightbox__heading title-h5">Skeleton Boss</p>
+                <p class="lightbox__project title-h5">/ Battle Chasers</p>
+              </div>
+            </div>
+            <div class="lightbox__content filterDiv ruined-king">
+              <div class="lightbox__image-wrapper">
+                <img
+                  class="lightbox__image lightbox-image"
+                  src="../image/our-work/shadow-yone-min.jpg"
+                  alt="Shadow Yone"
+                  data-link="#link-to-artstation-Shadow-Yone"
+                />
+              </div>
+              <div class="lightbox__heading-wrapper-line">
+                <p class="lightbox__heading title-h5">Shadow Yone</p>
+                <p class="lightbox__project title-h5">/ Ruined King</p>
+              </div>
+            </div>
+            <div class="lightbox__content filterDiv ruined-king">
+              <div class="lightbox__image-wrapper">
+                <img
+                  class="lightbox__image lightbox-image"
+                  src="../image/our-work/golem-min.jpg"
+                  alt="Golem"
+                  data-link="#link-to-artstation-Golem"
+                />
+              </div>
+              <div class="lightbox__heading-wrapper-line">
+                <p class="lightbox__heading title-h5">Golem</p>
+                <p class="lightbox__project title-h5">/ Ruined King</p>
+              </div>
+            </div>
+            <div class="lightbox__content filterDiv smite">
+              <div class="lightbox__image-wrapper">
+                <img
+                  class="lightbox__image lightbox-image"
+                  src="../image/our-work/house-unicorn-min.jpg"
+                  alt="House Unicorn"
+                  data-link="#link-to-artstation-House-Unicorn"
+                />
+              </div>
+              <div class="lightbox__heading-wrapper-line">
+                <p class="lightbox__heading title-h5">House Unicorn</p>
+                <p class="lightbox__project title-h5">/ SMITE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stages section">
+        <div class="container">
+          <h2
+            class="stages__heading section__heading title-h2 section__heading--dark section__heading--only"
+          >
+            Stages of Creating a 2D Character at VSQUAD Studio
+          </h2>
+
+          <ol class="stages__list">
+            <li class="stages__item">
+              <p class="stages__title title-h5-big">Concept Development</p>
+              <p class="stages__content">
+                Our journey begins with an in-depth discussion with our clients
+                to understand their vision and requirements. We brainstorm and
+                sketch initial concepts, considering the character's
+                personality, background, and role in the game or project.
+              </p>
+            </li>
+            <li class="stages__item">
+              <p class="stages__title title-h5-big">Sketching and Drafting</p>
+              <p class="stages__content">
+                Our skilled 2D character artists start with rough sketches to
+                establish the basic shapes and forms of the character. These
+                drafts are crucial for visualizing the character's proportions
+                and posture.
+              </p>
+            </li>
+            <li class="stages__item">
+              <p class="stages__title title-h5-big">Detailed Design</p>
+              <p class="stages__content">
+                Once the draft is approved, we move on to adding details. Our 2D
+                character designers refine the sketches, adding intricate
+                details, facial expressions, and unique features that define the
+                character.
+              </p>
+            </li>
+            <li class="stages__item">
+              <p class="stages__title title-h5-big">Coloring and Texturing</p>
+              <p class="stages__content">
+                Coloring is a pivotal stage in 2D character design. We choose a
+                color palette that aligns with the character's personality and
+                the overall aesthetic of the project. Texturing adds depth and
+                dimension, making the character more engaging.
+              </p>
+            </li>
+            <li class="stages__item">
+              <p class="stages__title title-h5-big">
+                Final Touches and Polishing
+              </p>
+              <p class="stages__content">
+                 The final stage involves adding highlights, shadows, and any
+                additional effects that enhance the character’s appearance. We
+                ensure that the character is polished to perfection before
+                delivering it to the client.
+              </p>
+            </li>
+          </ol>
+
+          <p class="stages__text">
+            VSQUAD Studio prides itself on a team of highly experienced 2D
+            character creators. Our artists and designers have worked on
+            numerous projects, ranging from indie games to large-scale
+            productions. This vast experience equips us with the knowledge and
+            skills required to tackle any challenge in 2D character design. 
+          </p>
+        </div>
+      </section>
+
+      <section class="why-us section">
+        <div class="container">
+          <div class="why-us__content">
+            <h2
+              class="section__heading title-h2 section__heading--white section__heading--center"
+            >
+              Why choose us
+            </h2>
+            <div class="why-us__description">
+              <p>
+                We strongly believe that collaboration with VSQUAD provides you
+                with a number of advantages:
+              </p>
+            </div>
+            <div class="why-us__wrapper">
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-cards"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-heading">
+                  Deep understanding of your game’s aesthetic and style
+                </p>
+                <p class="why-us__card-text">
+                  We immerse ourselves in the atmosphere and visual style of
+                  your game, seamlessly integrating 3D and 2D characters into
+                  the concept.
+                </p>
+              </div>
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-image"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-heading">
+                  Senior level of art competency
+                </p>
+                <p class="why-us__card-text">
+                  Our portfolio speaks for itself. Our character artists work on
+                  AAA projects, using modern solutions and completing
+                  award-winning projects.
+                </p>
+              </div>
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-stopwatch"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-heading">
+                  Respecting deadlines
+                </p>
+                <p class="why-us__card-text">
+                  We understand the importance of deadlines and always adhere to
+                  promised timelines.
+                </p>
+              </div>
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-chat"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-heading">
+                  Constantly staying in touch
+                </p>
+                <p class="why-us__card-text">
+                  The team of our Game Art and 3D Animation Company is always
+                  there for communication, discussion, and resolution of any
+                  issues or wishes.
+                </p>
+              </div>
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-ideas"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-heading">
+                  Providing you with extra ideas
+                </p>
+                <p class="why-us__card-text">
+                  We not only fulfill your tasks but also offer creative ideas
+                  and options that can enhance your game.
+                </p>
+              </div>
+              <div class="why-us__card">
+                <div class="why-us__card-icon">
+                  <svg class="why-us__card-svg" width="32px" height="32px">
+                    <use href="../image/sprite.svg#icon-game"></use>
+                  </svg>
+                </div>
+                <p class="title-h6 why-us__card-heading">
+                  Making everything possible to bring your game to life in a
+                  most beautiful shape
+                </p>
+                <p class="why-us__card-text">
+                  We immerse ourselves in the atmosphere and visual style of
+                  your game, seamlessly integrating 3D and 2D characters into
+                  the concept.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq section">
+        <div class="container">
+          <h2
+            class="section__heading title-h2 section__heading--dark section__heading--only section__heading--center"
+          >
+            FAQ
+          </h2>
+          <div class="faq__wrapper text-in-two-column">
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
+                What art styles do you work with? What can you help with?
+                <svg class="accordion__icon" width="30" height="30">
+                  <use href="../image/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <div class="accordionText accordion__panel">
+                We work with stylized and semi-realistic styles.
+              </div>
+            </div>
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
+                How does the work on the project proceed? Where does the work
+                begin?
+                <svg class="accordion__icon" width="30" height="30">
+                  <use href="../image/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <div class="accordionText accordion__panel">
+                You send us a request, we contact you back, discuss needs,
+                tasks, concepts, and other details. We start working on a
+                project, create a prototype, and finalize it until completion.
+              </div>
+            </div>
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
+                What is the cost of 2D and 3D character design? What is included
+                in the price?
+                <svg class="accordion__icon" width="30" height="30">
+                  <use href="../image/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <div class="accordionText accordion__panel">
+                The cost is calculated individually for each project. Submit
+                your request and we will estimate the budget for your project.
+              </div>
+            </div>
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
+                What are the main advantages of collaborating with your game art
+                outsourcing studio?
+                <svg class="accordion__icon" width="30" height="30">
+                  <use href="../image/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <div class="accordionText accordion__panel">
+                Working in with VSQUAD ensures the aesthetics and style of your
+                game, the highest level of artistic competence, adherence to
+                deadlines, constant availability for communication, provision of
+                additional ideas, and maximum efforts to bring your game to life
+                in the most attractive shape.
+              </div>
+            </div>
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
+                How are the relationships between the game art studio and the
+                client established?
+                <svg class="accordion__icon" width="30" height="30">
+                  <use href="../image/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <div class="accordionText accordion__panel">
+                When we start our collaboration, we sign a contract, discuss all
+                requirements, expectations, and begin work.
+              </div>
+            </div>
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
+                When are you ready to start working on 3D characters or 2D
+                concepts?
+                <svg class="accordion__icon" width="30" height="30">
+                  <use href="../image/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <div class="accordionText accordion__panel">
+                Before we start, it is important for us to conduct an initial
+                briefing, discuss details, and learn about the concept and
+                preferences. After that, we will prepare a proposal. Once agreed
+                upon, we are ready to start!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts section">
+        <div class="container">
+          <div class="contacts__wrapper">
+            <div class="contacts__content">
+              <h2 class="section__heading section__heading--dark title-h2">
+                Contacts
+              </h2>
+              <p>
+                Feel free to contact us in any way convenient for you. Let’s
+                create beautiful project together!
+              </p>
+              <div class="contacts__links-wrapper">
+                <h3 class="contacts__links-heading title-h5">
+                  How else can we help?
+                </h3>
+                <p class="contacts__links-text">
+                  I'm a studio:
+                  <a
+                    class="contacts__links contacts__links--email social-black"
+                    href="mailto:head@vsquad.art"
+                  >
+                    <svg class="social-black__icons" width="24px" height="24px">
+                      <use href="../image/sprite.svg#icon-email"></use>
+                    </svg>
+                    head@vsquad.art
+                  </a>
+                </p>
+                <p class="contacts__links-text">
+                  I'm an artist:
+                  <a
+                    class="contacts__links button button--transparent"
+                    href="#"
+                  >
+                    Join our team
+                  </a>
+                </p>
+                <p class="contacts__links-text">
+                  SEO:
+                  <a
+                    class="contacts__links button button--transparent"
+                    href="#"
+                  >
+                    FIll Contact form
+                  </a>
+                </p>
+                <p class="contacts__links-text">
+                  I am student:
+                  <a
+                    class="contacts__links button button--transparent"
+                    href="#"
+                  >
+                    Link to courses
+                  </a>
+                </p>
+              </div>
+              <div class="contacts__photos">
+                <div class="contacts__photo">
+                  <img src="../image/alona.jpg" alt="Alona Liubchuk" />
+                  <div class="contacts__name-wrapper">
+                    <p class="contacts__name title-h5">Alona Liubchuk</p>
+                    <p class="contacts__speciality">Director</p>
+                    <a class="contacts__linkedin social-black" href="#">
+                      <svg
+                        class="social-black__icons"
+                        width="24px"
+                        height="24px"
+                      >
+                        <use href="../image/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="contacts__photo">
+                  <div class="contacts__name-wrapper">
+                    <p class="contacts__name title-h5">Volodymyr Liubchuk</p>
+                    <p class="contacts__speciality">Founder, CEO, HR</p>
+                    <a class="contacts__linkedin social-black" href="#">
+                      <svg
+                        class="social-black__icons"
+                        width="24px"
+                        height="24px"
+                      >
+                        <use href="../image/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <img src="../image/volodymyr.jpg" alt="Volodymyr Liubchuk" />
+                </div>
+              </div>
+            </div>
+            <div class="contacts__form">
+              <form class="form" action="" method="post">
+                <div class="contacts__form-wrapper">
+                  <label class="form__label">
+                    Name
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="name"
+                      id="user-name"
+                      placeholder="Enter your name"
+                    />
+                  </label>
+                  <label class="form__label">
+                    Company
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="company"
+                      id="user-company"
+                      placeholder="Enter your company name"
+                    />
+                  </label>
+                  <label class="form__label">
+                    Business email
+                    <input
+                      class="form__input"
+                      type="email"
+                      name="email"
+                      id="user-email"
+                      placeholder="Example: email@gmail.com"
+                    />
+                  </label>
+                  <label class="form__label">
+                    Message
+                    <textarea
+                      class="form__textarea"
+                      name="message"
+                      id="user-message"
+                      placeholder="Write a message"
+                    ></textarea>
+                  </label>
+                </div>
+
+                <div class="contacts__form-policy form__policy">
+                  <input
+                    class="form__checkbox-input visually-hidden"
+                    type="checkbox"
+                    id="checkbox-terms"
+                    name="checkbox-terms"
+                  />
+                  <label class="form__checkbox-label" for="checkbox-terms">
+                    <span>
+                      By ticking this box, I am giving a consent to process my
+                      personal data provided in the form above in accordance
+                      with VSQUAD’s
+                      <a target="_blank" href="#">Privacy Policy</a>
+                      and
+                      <a href="#" target="_blank">Cookie Policy</a>
+                    </span>
+                  </label>
+                </div>
+
+                <button
+                  class="contacts__form-btn button button--red"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <a class="footer__logo-image" href="#">
+              <img src="../image/logo_white.svg" alt="logo" />
+            </a>
+            <p class="footer__copy">&copy; VSQUAD. All rights reserved</p>
+          </div>
+          <div class="footer__menu">
+            <ul>
+              <li><a class="footer__menu-link link" href="#">About us</a></li>
+              <li><a class="footer__menu-link link" href="#">WHY US</a></li>
+              <li>
+                <a class="footer__menu-link link" href="../contacts.html">
+                  Contacts
+                </a>
+              </li>
+              <li>
+                <a class="footer__menu-link link" href="../blog.html">Blog</a>
+              </li>
+              <li>
+                <a class="footer__menu-link link" href="../text.html">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a class="footer__menu-link link" href="../text.html">
+                  Cookies Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__submenu">
+            <div class="footer__list">
+              <p class="footer__sub-heading title-h7">What we do</p>
+              <ul>
+                <li>
+                  <a class="footer__submenu-link" href="#">2D CHARACTER</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">2D ENVIRONMENT</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">3D CHARACTER</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">3D ANIMATION</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list">
+              <p class="footer__sub-heading title-h7">Projects</p>
+              <ul>
+                <li><a class="footer__submenu-link" href="#">WAYFINDER</a></li>
+                <li>
+                  <a class="footer__submenu-link" href="#">
+                    DARKSIDERS GENESIS
+                  </a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">BATTLE CHASERS</a>
+                </li>
+                <li>
+                  <a class="footer__submenu-link" href="#">RUINED KING</a>
+                </li>
+                <li><a class="footer__submenu-link" href="#">SMITE</a></li>
+                <li>
+                  <a class="footer__submenu-link" href="#">OWN PROJECTS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__social">
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+            <a href="#" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+            <a href="mailto:head@vsquad.art" class="social" target="_blank">
+              <svg class="social__icons" width="24px" height="24px">
+                <use href="../image/sprite.svg#icon-email"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal container">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          <svg class="modal__close-icon" width="16px" height="16px">
+            <use href="../image/sprite.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <h2 class="modal__heading title-h2">CONTACT uS</h2>
+        <p class="modal__description">
+          Feel free to contact us. Let’s create beautiful project together!
+        </p>
+        <div class="modal__form">
+          <form class="form" action="" method="post">
+            <div class="modal__form-wrapper">
+              <label class="form__label modal__input">
+                Name
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </label>
+              <label class="form__label modal__input">
+                Business email
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Example: email@gmail.com"
+                />
+              </label>
+              <label class="form__label modal__textarea">
+                Message
+                <textarea
+                  class="form__textarea"
+                  name="message"
+                  id="message"
+                  placeholder="Write a message"
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="modal__form-policy">
+              <div class="form__policy">
+                <input
+                  class="form__checkbox-input visually-hidden"
+                  type="checkbox"
+                  id="check-terms"
+                  name="checkbox-terms"
+                />
+                <label class="form__checkbox-label" for="check-terms">
+                  <span>
+                    By ticking this box, I am giving a consent to process my
+                    personal data provided in the form above in accordance with
+                    VSQUAD’s
+                    <a target="_blank" href="#">Privacy Policy</a>
+                    and
+                    <a href="#" target="_blank">Cookie Policy</a>
+                  </span>
+                </label>
+              </div>
+
+              <button class="modal__form-btn button button--red" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="lightbox" class="lightbox-modal is-hidden">
+      <div class="lightbox-modal__content">
+        <button
+          class="lightbox-modal__btn-close lightbox-modal-close"
+          type="button"
+        >
+          <svg class="lightbox-modal__close-icon" width="16px" height="16px">
+            <use href="../image/sprite.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <a
+          id="lightbox-link"
+          class="lightbox-modal__link social"
+          href="#"
+          target="_blank"
+        >
+          <svg class="social__icons" width="24px" height="24px">
+            <use href="../image/sprite.svg#icon-artstation"></use>
+          </svg>
+        </a>
+        <img id="lightbox-img" />
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/lightbox.js"></script>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/slider-what-we-do.js"></script>
+    <script src="../js/slider-projects.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/filter-projects.js"></script>
+  </body>
+</html>

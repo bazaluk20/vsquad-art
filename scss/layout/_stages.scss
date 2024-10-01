@@ -1,0 +1,41 @@
+.stages {
+  background-color: coloring(gray-50);
+
+  &__heading {
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 24px;
+    }
+  }
+
+  &__list {
+    counter-reset: item;
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    padding-left: 0;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__item {
+    border-left: 4px solid coloring(primary-red-600);
+    counter-increment: item;
+    margin-bottom: 16px; /* Отступы между пунктами */
+    padding-left: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    color: coloring(gray-900);
+
+    &::before {
+      content: counter(item, decimal-leading-zero) '. '; /* Автоматически добавляем номер перед заголовком */
+      margin-right: 8px;
+    }
+  }
+}

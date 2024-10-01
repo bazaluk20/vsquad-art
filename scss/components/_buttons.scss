@@ -69,4 +69,20 @@
       }
     }
   }
+
+  &--transparent-border {
+    background-color: transparent;
+    color: coloring(primary-red-600);
+
+    &--icon {
+      fill: coloring(primary-red-600);
+    }
+
+    &:active,
+    &:hover {
+      color: coloring(primary-red-700);
+      border-color: coloring(primary-red-700);
+      background-color: coloring(primary-red-100);
+    }
+  }
 }
