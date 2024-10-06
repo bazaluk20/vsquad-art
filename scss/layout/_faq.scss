@@ -9,7 +9,9 @@
     gap: 0 64px;
 
     & > * {
-      flex-basis: calc((100% - 64px) / 2);
+      @media screen and (min-width: $bp-tablet) {
+        flex-basis: calc((100% - 64px) / 2);
+      }
     }
   }
 }
